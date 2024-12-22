@@ -1,0 +1,51 @@
+
+[terminal.shell]
+program = "/bin/fish"
+#args = ["-l"]
+
+[env]
+TERM = "xterm-256color"
+
+[window]
+decorations = "Full" # None | Transparent | Buttonless
+decorations_theme_variant = "Dark" # Light | None
+padding = { x = 10, y = 10 }
+dynamic_padding = false
+opacity = 0.9
+startup_mode = "Windowed" # Maximized | FullScreen
+
+[scrolling]
+history = 20000 # default 10000
+multiplier = 3
+
+[selection]
+save_to_clipboard = true # default false
+
+[cursor]
+style = { shape = "Block", blinking = "On" }
+blink_timeout = 0
+
+[[mouse.bindings]]
+mouse = "Left"
+mods = "Control"
+action = "Paste"
+
+[general]
+import = [
+#	"~/.config/alacritty/theme/ayu_dark.toml",
+#	"~/.config/alacritty/theme/ayu_light.toml",
+#	"~/.config/alacritty/theme/dracula_plus.toml",
+#	"~/.config/alacritty/theme/gruvbox_light.toml",
+#	"~/.config/alacritty/theme/gruvbox_material.toml",
+#	"~/.config/alacritty/theme/hardhacker.toml",
+#	"~/.config/alacritty/theme/material_theme.toml",
+#	"~/.config/alacritty/theme/noctis_lux.toml",
+#	"~/.config/alacritty/theme/papercolor_light.toml",
+#	"~/.config/alacritty/theme/papertheme.toml",
+#	"~/.config/alacritty/theme/pastel_dark.toml",
+#	"~/.config/alacritty/theme/taerminal.toml",
+	"~/.config/alacritty/theme/wombat.toml",
+]
+
+[font]
+size = 10
