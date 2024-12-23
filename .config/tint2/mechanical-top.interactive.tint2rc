@@ -498,7 +498,7 @@ execp_cache_icon = 0
 execp_continuous = 0
 execp_markup = 0
 execp_tooltip = [L] Toggle Playback [R] Music Menu [M] Switch MPD/Spotify [S] Change Track
-execp_lclick_command = ~/.local/bin/music-controller.sh toggle
+execp_lclick_command = mpv --player-operation-mode=pseudo-gui --idle
 execp_rclick_command = ~/.config/rofi/scripts/rofi-exts.sh music
 execp_mclick_command = ~/.local/bin/music-controller.sh switch
 execp_uwheel_command = ~/.local/bin/music-controller.sh prev

@@ -49,19 +49,32 @@ our $SCHEMA = [
     {sep       => undef},
 
     {item      => ["$ENV{HOME}/.local/bin/launch-apps.sh terminal",                       "Open Terminal",               "$ENV{HOME}/.local/share/icons/Gladient/terminal.png"]},
+
+    {sep       => undef},
+    
     {item      => ["$ENV{HOME}/.local/bin/launch-apps.sh file_manager",                   "Open File Manager",           "$ENV{HOME}/.local/share/icons/Gladient/file-manager.png"]},
 
     {sep       => undef},
 
     {beg       => [                                                                     "Screenshot",                  "$ENV{HOME}/.local/share/icons/Gladient/screenshot.png"]},
     {item      => ["$ENV{HOME}/.local/bin/screenshot-screen.sh delay",                    "Screen",                      "$ENV{HOME}/.local/share/icons/Gladient/screenshot.png"]},
+    
+    {sep       => undef},
+    
     {item      => ["$ENV{HOME}/.local/bin/screenshot-selection.sh",                       "Select or Draw",              "$ENV{HOME}/.local/share/icons/Gladient/screenshot.png"]},
+    
+    {sep       => undef},
+    
     {item      => ["$ENV{HOME}/.local/bin/screenshot-countdown.sh",                       "Countdown ?s",                "$ENV{HOME}/.local/share/icons/Gladient/screenshot.png"]},
+    
     {end       => undef},
 
     {sep       => undef},
 
     {pipe      => ["$ENV{HOME}/.config/openbox/pipe-menu/ob-randr.py",                  "Monitor Settings",            "$ENV{HOME}/.local/share/icons/Gladient/monitor-settings.png"]},
+
+    {sep       => undef},
+    
     {obgenmenu => [                                                                     "Advanced Settings",           "$ENV{HOME}/.local/share/icons/Gladient/advanced-settings.png"]},
 
     {sep       => undef},
@@ -70,12 +83,23 @@ our $SCHEMA = [
 
     {beg       => [                                                                     "Appearance",                  "$ENV{HOME}/.local/share/icons/Gladient/appearance.png"]},
     {item      => [waypaper, "Change Wallpaper", "$ENV{HOME}/.local/share/icons/Gladient/wallpaper.png"]},
+    
     {sep       => undef},
+    
     {item      => ["$ENV{HOME}/.config/openbox/joyful-desktop/ob-button-set.sh",        "Change Window Button-Style",  "$ENV{HOME}/.local/share/icons/Gladient/ob-button-change.png"]},
-    {item      => ["$ENV{HOME}/.config/openbox/joyful-desktop/ob-button-set.sh swap",   "Swap Window Button-Location", "$ENV{HOME}/.local/share/icons/Gladient/ob-button-swap.png"]},
+    
     {sep       => undef},
+    
+    {item      => ["$ENV{HOME}/.config/openbox/joyful-desktop/ob-button-set.sh swap",   "Swap Window Button-Location", "$ENV{HOME}/.local/share/icons/Gladient/ob-button-swap.png"]},
+    
+    {sep       => undef},
+    
     {item      => ["$ENV{HOME}/.config/openbox/joyful-desktop/toggle-mode.sh mode",     "Toggle Mode",                 "$ENV{HOME}/.local/share/icons/Gladient/mode.png"]},
+    
+    {sep       => undef},
+    
     {item      => ["$ENV{HOME}/.config/openbox/joyful-desktop/toggle-mode.sh",          "Switch Theme",                "$ENV{HOME}/.local/share/icons/Gladient/theme.png"]},
+    
     {end       => undef},
 
     {sep       => undef},

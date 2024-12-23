@@ -197,11 +197,7 @@ LIBS_PATH=" \
 /usr/local/lib \
 /usr/local/lib64 \
 /usr/local/libexec \
-/usr/local/libexec64 \
-#${HOME}/.nix-profile/lib \
-#${HOME}/.nix-profile/lib64 \
-#${HOME}/.nix-profile/libexec \
-#${HOME}/.nix-profile/libexec64 "
+/usr/local/libexec64 "
 
 CONFIG_DIR="${HOME}/.config"
 ICONS_DIR="${HOME}/.local/share/icons"

@@ -70,6 +70,6 @@ our $CONFIG = {
                            },
   "locale_support"      => 1,
   "missing_icon"        => "gtk-missing-image",
-  "terminal"            => "urxvt",
+  "terminal"            => "alacritty",
   "VERSION"             => 0.93,
 }
