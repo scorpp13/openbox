@@ -46,6 +46,7 @@
 	rofi
     rxvt-unicode
     scrot
+    socket
     tint2
 	thunar
 	thunar-archive-plugin
@@ -63,6 +64,7 @@
     wireless-tools
     x11-xserver-utils
 	xarchiver
+    xautolock
     xclip
 	xdg-desktop-portal
 	xdg-utils
