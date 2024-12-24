@@ -52,7 +52,7 @@ case "${@}" in
     ;;
     "$D"     ) prompt "$D_" "${SYSTEMCTL:-loginctl} --no-ask-password suspend"
     ;;
-    "$E"     ) prompt "$E_" "${SYSTEMCTL:-loginctl} --no-ask-password hibernate"
+    "$E"     ) prompt "$E_" "${SYSTEMCTL:-loginctl} --no-ask-password suspend"
     ;;
     "$F"     ) prompt "$F_" 'loginctl --no-ask-password kill-user ${EUID:-$(id -u)} --signal=SIGKILL'
     ;;

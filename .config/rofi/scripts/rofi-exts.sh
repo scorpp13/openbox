@@ -14,14 +14,12 @@ SYSINFO=''
 SCREENSHOT=''
 SESSION=''
 MEDIA=''
-MUSIC=''
 
 CUSTOM_MODI="\
 ${SYSINFO}:${0%/*}/custom-modi/modi-sysinfo.sh,\
 ${SCREENSHOT}:${0%/*}/custom-modi/modi-screenshot.sh,\
 ${SESSION}:${0%/*}/custom-modi/modi-session.sh,\
-${MEDIA}:${0%/*}/custom-modi/modi-media.sh,\
-${MUSIC}:${0%/*}/custom-modi/modi-music.sh"
+${MEDIA}:${0%/*}/custom-modi/modi-media.sh"
 
 case "${1}" in
     sys*) MODI="$SYSINFO"
@@ -31,8 +29,6 @@ case "${1}" in
     ses*) MODI="$SESSION"
     ;;
     med*) MODI="$MEDIA"
-    ;;
-    mus*) MODI="$MUSIC"
     ;;
 esac
 

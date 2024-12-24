@@ -7,7 +7,7 @@
 
 # Use GTK2 for QT apps via `qtstyleplugins`, dark themes are buggy.
 #export QT_QPA_PLATFORMTHEME='gtk2'
-export QT_QPA_PLATFORMTHEME="qt5ct"
+export QT_QPA_PLATFORMTHEME="qt6ct"
 
 # Make our environment identity considered as GNOME, `tdesktop` affected, it will use GTK file chooser.
 # NOTE: Better to modify each ".desktop" file for each apps, for example `Exec=env VAR=value commands`.

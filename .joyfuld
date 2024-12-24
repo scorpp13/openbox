@@ -142,26 +142,6 @@ BRIGHTNESS_DEVICE=''
 BRIGHTNESS_STEPS='5'
 
 #-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~--~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-#
-# Ncmpcpp album-art options                                          ~ Auto-load ~ #
-#-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~--~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-#
-# NCMPCPP_AA_BACKEND    || Details about supported image backend described below.  #
-#                       || *) Only supports 'w3m' and 'pixbuf' TE image backends.  #
-#                       || *) Both backends on `rxvt-unicode` works like a charm.  #
-#                       || *) 'pixbuf' backend is not portable, so may not works.  #
-#                       ||---------------------------------------------------------#
-# NCMPCPP_AA_NICENESS   || 0-19 or leave it blank, it reduces CPU% of 'w3m' loop.  #
-#                       ||---------------------------------------------------------#
-# NCMPCPP_{,S}AA_LAUNC* || Override ncmpcpp and single album-art geometry pixels.  #
-#-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~--~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-#
-
-NCMPCPP_AA_BACKEND='w3m'
-
-NCMPCPP_AA_NICENESS='19'
-
-NCMPCPP_AA_LAUNCHER_GEOMETRY='84x13'
-NCMPCPP_SAA_LAUNCHER_GEOMETRY='47x18'
-
-#-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~--~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-#
 # The following are owl4ce/dotfiles environment variables which called in "*.sh".  #
 #-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~--~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-#
 # Doesn't affect to all files. For example "*.tint2rc", "rc.xml", "schema.pl", ..  #
@@ -207,9 +187,6 @@ WALLPAPERS_DIR="${HOME}/Pictures/Wallpapers"
 TMP_DIR='/tmp'
 
 DUNST_DIR="${CONFIG_DIR}/dunst"
-MPD_DIR="${CONFIG_DIR}/mpd"
-MPD_SCRIPTS_DIR="${MPD_DIR}/scripts"
-NCMPCPP_DIR="${CONFIG_DIR}/ncmpcpp"
 OB_DIR="${CONFIG_DIR}/openbox"
 JOYD_DIR="${OB_DIR}/joyful-desktop"
 ROFI_DIR="${CONFIG_DIR}/rofi"
@@ -222,7 +199,6 @@ MECH_OB_THEME_DIR="${THEMES_DIR}/${MECH_GTK}/openbox-3"
 EYEC_OB_THEME_DIR="${THEMES_DIR}/${EYEC_GTK}/openbox-3"
 
 GTK3_CONFIG="${CONFIG_DIR}/gtk-3.0/settings.ini"
-MPD_CONFIG="${MPD_DIR}/mpd.conf"
 OB_CONFIG="${OB_DIR}/rc.xml"
 OB_TRAY="${OB_DIR}/tray"
 MODE_FILE="${JOYD_DIR}/db.mode.joy"
@@ -233,8 +209,6 @@ APPS_FILE="${SCRIPTS_DIR}/db.apps.joy"
 GTK2_CONFIG="${HOME}/.gtkrc-2.0"
 XRESOURCES_CONFIG="${HOME}/.Xresources"
 
-CHK_MPD_PORT="$(siq 'port' "$MPD_CONFIG")"
-CHK_MPD_MUSIC_DIR="$(siq 'music_directory' "$MPD_CONFIG")"
 CHK_THEME="$(siq 'current_theme' "$MODE_FILE")"
 CHK_MODE="$(siq 'current_mode' "$MODE_FILE")"
 CHK_PANEL_ORT="$(siq 'panel_orientation.artistic' "$MODE_FILE")"
@@ -251,21 +225,14 @@ SCREENSHOT_ICON="${GLADIENT_ICON_DIR}/screenshot.png"
 TERMINAL_ICON="${GLADIENT_ICON_DIR}/terminal.png"
 WALLPAPER_ICON="${GLADIENT_ICON_DIR}/wallpaper.png"
 
-MPD_NOTIFY_AA_IMG="${TMP_DIR}/mpd.notify.album-art.png"
-NCMPCPP_AA_IMG="${TMP_DIR}/ncmpcpp.album-art.png"
-NCMPCPP_AA_PID="${NCMPCPP_AA_IMG%.*}.pid"
-
 #-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~--~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-#
 
-alias joyd_mpd_notifier='${MPD_SCRIPTS_DIR}/mpd-notifier.sh'
-alias joyd_mpd_notify_albumart='${MPD_SCRIPTS_DIR}/notify.album-art.sh'
 alias joyd_layout_set='${JOYD_DIR}/layout-set.sh'
 alias joyd_terminal_set='${JOYD_DIR}/terminal-set.sh'
 alias joyd_theme_set='${JOYD_DIR}/theme-set.sh'
 alias joyd_toggle_mode='${JOYD_DIR}/toggle-mode.sh'
 alias joyd_user_interface_set='${JOYD_DIR}/user-interface-set.sh'
 alias joyd_launch_apps='${SCRIPTS_DIR}/launch-apps.sh'
-alias joyd_music_controller='${SCRIPTS_DIR}/music-controller.sh'
 alias joyd_screenshot_countdown='${SCRIPTS_DIR}/screenshot-countdown.sh'
 alias joyd_screenshot_screen='${SCRIPTS_DIR}/screenshot-screen.sh'
 alias joyd_screenshot_selection='${SCRIPTS_DIR}/screenshot-selection.sh'

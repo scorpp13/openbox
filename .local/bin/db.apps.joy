@@ -1,4 +1,4 @@
 terminal          "alacritty"
-music_player      "mpd"
+music_player      "mpv"
 file_manager      "thunar"
 session_locker    "sleep 7s"
