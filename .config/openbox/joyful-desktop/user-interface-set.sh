@@ -44,7 +44,8 @@ joyd_terminal_set "$JOYD_TERMINAL_SET_ARGS" &
 
 unset JOYD_TERMINAL_SET_ARGS
 
-[ -n "${1}" ] || nitrogen --force-setter=xwindows --set-zoom-fill --save "${CHK_WALLPAPER_DIR}/${CHK_WALLPAPER}"
+#[ -n "${1}" ] || nitrogen --force-setter=xwindows --set-zoom-fill --save "${CHK_WALLPAPER_DIR}/${CHK_WALLPAPER}"
+[ -n "${1}" ] || $HOME/.fehbg &
 
 {
     case "$CHK_MODE" in
