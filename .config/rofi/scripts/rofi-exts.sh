@@ -10,16 +10,18 @@ SYSTEM_LANG="$LANG"
 export LANG='POSIX'
 exec >/dev/null 2>&1
 
-SYSINFO=''
-SCREENSHOT=''
-SESSION=''
-MEDIA=''
+SYSINFO=''
+SCREENSHOT=''
+SESSION=''
+MEDIA=''
+THEME=''
 
 CUSTOM_MODI="\
 ${SYSINFO}:${0%/*}/custom-modi/modi-sysinfo.sh,\
 ${SCREENSHOT}:${0%/*}/custom-modi/modi-screenshot.sh,\
 ${SESSION}:${0%/*}/custom-modi/modi-session.sh,\
-${MEDIA}:${0%/*}/custom-modi/modi-media.sh"
+${MEDIA}:${0%/*}/custom-modi/modi-media.sh,\
+${THEME}:${0%/*}/custom-modi/modi-theme.sh"
 
 case "${1}" in
     sys*) MODI="$SYSINFO"
@@ -29,6 +31,8 @@ case "${1}" in
     ses*) MODI="$SESSION"
     ;;
     med*) MODI="$MEDIA"
+    ;;
+    the*) MODI="$THEME"
     ;;
 esac
 

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<channel name="thunar" version="1.0">
+  <property name="last-view" type="string" value="ThunarIconView"/>
+  <property name="last-location-bar" type="string" value="ThunarLocationButtons"/>
+  <property name="last-icon-view-zoom-level" type="string" value="THUNAR_ZOOM_LEVEL_100_PERCENT"/>
+  <property name="last-window-maximized" type="bool" value="false"/>
+  <property name="last-window-width" type="int" value="905"/>
+  <property name="last-window-height" type="int" value="567"/>
+  <property name="last-show-hidden" type="bool" value="true"/>
+  <property name="last-details-view-zoom-level" type="string" value="THUNAR_ZOOM_LEVEL_38_PERCENT"/>
+  <property name="last-details-view-column-widths" type="string" value="50,118,145,171,189,68,78,61,144,96,78,81,50,145"/>
+  <property name="misc-single-click" type="bool" value="false"/>
+  <property name="default-view" type="string" value="ThunarIconView"/>
+  <property name="misc-thumbnail-mode" type="string" value="THUNAR_THUMBNAIL_MODE_ALWAYS"/>
+  <property name="misc-file-size-binary" type="bool" value="false"/>
+  <property name="misc-date-style" type="string" value="THUNAR_DATE_STYLE_DDMMYYYY"/>
+  <property name="shortcuts-icon-size" type="string" value="THUNAR_ICON_SIZE_24"/>
+  <property name="misc-show-delete-action" type="bool" value="true"/>
+  <property name="last-separator-position" type="int" value="174"/>
+  <property name="misc-middle-click-in-tab" type="bool" value="true"/>
+  <property name="hidden-devices" type="array">
+  </property>
+  <property name="hidden-bookmarks" type="array">
+    <value type="string" value="network:///"/>
+    <value type="string" value="recent:///"/>
+    <value type="string" value="computer:///"/>
+    <value type="string" value="file:///home/as/%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB"/>
+  </property>
+  <property name="last-details-view-visible-columns" type="string" value="THUNAR_COLUMN_DATE_MODIFIED,THUNAR_COLUMN_GROUP,THUNAR_COLUMN_NAME,THUNAR_COLUMN_OWNER,THUNAR_COLUMN_PERMISSIONS,THUNAR_COLUMN_SIZE,THUNAR_COLUMN_TYPE"/>
+  <property name="last-details-view-column-order" type="string" value="THUNAR_COLUMN_NAME,THUNAR_COLUMN_SIZE,THUNAR_COLUMN_SIZE_IN_BYTES,THUNAR_COLUMN_TYPE,THUNAR_COLUMN_DATE_MODIFIED,THUNAR_COLUMN_OWNER,THUNAR_COLUMN_GROUP,THUNAR_COLUMN_PERMISSIONS,THUNAR_COLUMN_DATE_ACCESSED,THUNAR_COLUMN_MIME_TYPE"/>
+  <property name="last-menubar-visible" type="bool" value="false"/>
+  <property name="last-sort-column" type="string" value="THUNAR_COLUMN_NAME"/>
+  <property name="last-sort-order" type="string" value="GTK_SORT_ASCENDING"/>
+  <property name="last-statusbar-visible" type="bool" value="true"/>
+  <property name="last-compact-view-zoom-level" type="string" value="THUNAR_ZOOM_LEVEL_50_PERCENT"/>
+  <property name="last-side-pane" type="string" value="ThunarShortcutsPane"/>
+  <property name="misc-text-beside-icons" type="bool" value="false"/>
+  <property name="misc-parallel-copy-mode" type="string" value="THUNAR_PARALLEL_COPY_MODE_ALWAYS"/>
+  <property name="misc-confirm-close-multiple-tabs" type="bool" value="false"/>
+  <property name="last-splitview-separator-position" type="int" value="452"/>
+  <property name="tree-icon-size" type="string" value="THUNAR_ICON_SIZE_24"/>
+</channel>
