@@ -51,6 +51,7 @@
 	xdg-utils
     xfce4-power-manager
 	xfce4-terminal
+    xhost
     xsettingsd
 	vifm
     w3m
