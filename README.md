@@ -1,6 +1,6 @@
-# My config files for Openbox WM
+# My config files for Openbox
 
-A working configuration of Openbox for Linux Distributions
+Light version of openSUSE_Tumbleweed with openbox onboard
 
 ## Installation
 
