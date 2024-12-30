@@ -14,11 +14,11 @@ A working configuration of Openbox for Linux Distributions
 - `sudo zypper install ...`
 - [ ] Reboot your machine
 - `sudo reboot`
-- { ! } Authorization required, but no authorization protocol specified
+- <!> Authorization required, but no authorization protocol specified
     - `uncomment in ~/.bashrc -> xhost +si:localuser:$USER`
-- { ! } Set CapsLock to change keyboard layout with led-indicator
+- <!> Set CapsLock to change keyboard layout with led-indicator
     - `sudo localectl --no-convert set-x11-keymap us,ru pc105+inet qwerty grp:caps_toggle,grp_led:caps`
-- { ! } Reboot your machine
+- <!> Reboot your machine
     - `sudo reboot`
 - [ ] Enjoy
 - `^;^`
