@@ -9,9 +9,9 @@ A working configuration of Openbox for Linux Distributions
 - [ ] Change to qtile directory
 - `cd $HOME/openbox/`
 - [ ] Copy folders and files from it to your $HOME
-- `cp -r .config .local .vim .bash_profile .bashrc .gtkrc-2.0 .my_aliases .vimrc .xinitrc $HOME`
+- `cp -r .config .local .vim .icons .themes Pictures .vimrc .joyfuld $HOME`
 - [ ] Install necessary software from list
-- `sudo apt install ... pacman -S ... zypper install ...`
+- `sudo zypper install ...`
 - [ ] Reboot your machine
 - `sudo reboot`
 - [ ] Enjoy

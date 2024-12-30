@@ -1,72 +1,58 @@
-# necessary packages
-# install with your package manager
+# necessary packages for openSUSE_Tumbleweed
+# suggest to start with  minimal-desktop e.g. icewm
+# install these packages with 'zypper in' command
 	alacritty
     alsa-utils
+# copy from https://github.com/jamielinux/bashmount to ~/.local/bin
 	bashmount
-	bluez
-	blueman
-	breeze
+	breeze6-style
     brightnessctl
 	btop
-	cantarell
-	curl
 	dunst
 	fastfetch
-	feh
-    ffmpegthumbnailer
-	fish
+	fish # zsh
+	gcc
     geany
-	git
-    gsimplecal
+	git-core
+	gobject-introspection-devel #! needed for waypaper
+# https://software.opensuse.org/download/package?package=gsimplecal&project=home%3AAndnoVember%3ALXQt
+	gsimplecal
 	gum
-	gvfs
-	i3lock-color
-    imagemagick
-	inxi
-    libgtk3-perl
 	light-locker
+	lxappearance
     lxpolkit
-	micro
 	mpv
-	networkmanager
-	nm-applet
-    nwg-look
-    obmenu-generator
+	NetworkManager-applet
+# https://github.com/trizen/obmenu-generator    
+	obmenu-generator #! install with dependencies
     openbox
     parcellite
+	pasystray
     pavucontrol
-	peek
+	perl-Gtk3 #! needed for obmenu-generator
+	perl-Data-Dump #! needed for obmenu-generator
+	perl-Linux-DesktopFile #! needed for obmenu-generator
+	perl-File-DesktopEntry #! needed for obmenu-generator
 	picom
-	pipx
-	polkit
-    psmisc
-	psutil
-    pulseaudio
+	pytnon311-pipx
+	python311-psutil
+	python311-pycairo-devel #! needed for waypaper
 	rofi
-    rxvt-unicode
     scrot
-    socket
     tint2
 	thunar
 	thunar-archive-plugin
-	thunar-volman
-	tumbler
 	qt6ct
+	udiskie
 	ueberzugpp
-	unrar
-	user-dirs-dirs
-	vifm
-	vim
-	vivaldi
-    w3m
-	waypaper
-    wireless-tools
-    x11-xserver-utils
 	xarchiver
-    xautolock
-    xclip
-	xdg-desktop-portal
+	xdg-desktop-portal-gtk
+	xdg-user-dirs-gtk
 	xdg-utils
     xfce4-power-manager
-   	xserver-xorg-core
+	xfce4-terminal
     xsettingsd
+	vifm
+    w3m
+# pipx install waypaper	
+	waypaper #! first install dependencies
