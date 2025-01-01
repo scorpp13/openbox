@@ -9,7 +9,7 @@ Light version of openSUSE_Tumbleweed with openbox onboard
 - [ ] Change to qtile directory
 - `cd $HOME/openbox/`
 - [ ] Copy folders and files from it to your $HOME
-- `cp -r .config .icons .local .themes .vim Pictures .alias .bashrc .dmrc .joyfuld .vimrc $HOME`
+- `cp -r .config .icons .local .themes .vim Pictures .alias .bashrc .dmrc .vimrc $HOME`
 - [ ] Install necessary software from list
 - `sudo zypper install ...`
 - [ ] Reboot your machine

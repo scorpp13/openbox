@@ -1,8 +1,6 @@
-#!/home/as/.local/share/pipx/venvs/waypaper/bin/python
-# The script-base taken from "https://git.io/JyYwk".
+#!/usr/bin/python3
 
 from __future__ import print_function
-
 import os
 import shutil
 import subprocess

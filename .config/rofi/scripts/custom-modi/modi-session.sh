@@ -1,13 +1,5 @@
 #!/bin/sh
 
-# Desc:   Custom session manager modi for rofi.
-# Author: Harry Kurn <alternate-se7en@pm.me>
-# URL:    https://github.com/owl4ce/dotfiles/tree/ng/.config/rofi/scripts/custom-modi/modi-session.sh
-
-# SPDX-License-Identifier: ISC
-
-# shellcheck disable=SC2016
-
 export LANG='POSIX'
 exec 2>/dev/null
 

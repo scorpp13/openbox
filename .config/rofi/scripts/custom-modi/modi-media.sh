@@ -1,16 +1,7 @@
 #!/bin/sh
 
-# Desc:   Custom media controller modi for rofi.
-# Author: Harry Kurn <alternate-se7en@pm.me>
-# URL:    https://github.com/owl4ce/dotfiles/tree/ng/.config/rofi/scripts/custom-modi/modi-media.sh
-
-# SPDX-License-Identifier: ISC
-
-# shellcheck disable=SC2166
-
 export LANG='POSIX'
 exec 2>/dev/null
-. "${HOME}/.joyfuld"
 
 case "$ROFI_RETV" in
     28) LANG="$SYSTEM_LANG" exec "${0%/*}/../rofi-main.sh"

@@ -1,0 +1,11 @@
+picom --daemon &
+lxpolkit &
+light-locker &
+tint2 -c $HOME/.config/tint2/mechanical-vertical.artistic.tint2rc &
+$HOME/.fehbg &
+dunst &
+parcellite &
+pasystray &
+nm-applet &
+xfce4-power-manager &
+udiskie -Ans &

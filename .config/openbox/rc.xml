@@ -174,54 +174,6 @@
   </dock>
   <keyboard>
     <chainQuitKey>C-g</chainQuitKey>
-    <!-- Brightness control. -->
-    <keybind key="XF86MonBrightnessUp">
-      <action name="Execute">
-        <command>~/.local/bin/change-brightness.sh +</command>
-      </action>
-    </keybind>
-    <keybind key="XF86MonBrightnessDown">
-      <action name="Execute">
-        <command>~/.local/bin/change-brightness.sh -</command>
-      </action>
-    </keybind>
-    <!-- Audio-volume control. -->
-    <keybind key="XF86AudioRaiseVolume">
-      <action name="Execute">
-        <command>~/.local/bin/change-volume.sh +</command>
-      </action>
-    </keybind>
-    <keybind key="XF86AudioLowerVolume">
-      <action name="Execute">
-        <command>~/.local/bin/change-volume.sh -</command>
-      </action>
-    </keybind>
-    <keybind key="XF86AudioMute">
-      <action name="Execute">
-        <command>~/.local/bin/change-volume.sh 0</command>
-      </action>
-    </keybind>
-    <!-- Media control. -->
-    <keybind key="XF86AudioPrev">
-      <action name="Execute">
-        <command>~/.local/bin/music-controller.sh prev</command>
-      </action>
-    </keybind>
-    <keybind key="XF86AudioNext">
-      <action name="Execute">
-        <command>~/.local/bin/music-controller.sh next</command>
-      </action>
-    </keybind>
-    <keybind key="XF86AudioStop">
-      <action name="Execute">
-        <command>~/.local/bin/music-controller.sh stop</command>
-      </action>
-    </keybind>
-    <keybind key="XF86AudioPlay">
-      <action name="Execute">
-        <command>~/.local/bin/music-controller.sh toggle</command>
-      </action>
-    </keybind>
     <!-- Move window-focus across visible windows. -->
     <keybind key="W-Left">
       <action name="DirectionalCycleWindows">
@@ -369,7 +321,7 @@
         <menu>client-menu</menu>
       </action>
     </keybind>
-    <keybind key="W-c">
+    <keybind key="W-q">
       <action name="Close"/>
     </keybind>
     <keybind key="W-d">
@@ -429,22 +381,6 @@
         <command>~/.config/rofi/scripts/rofi-main.sh</command>
       </action>
     </keybind>
-    <!-- Screenshots. -->
-    <keybind key="Print">
-      <action name="Execute">
-        <command>~/.local/bin/screenshot-screen.sh</command>
-      </action>
-    </keybind>
-    <keybind key="C-Print">
-      <action name="Execute">
-        <command>~/.local/bin/screenshot-countdown.sh</command>
-      </action>
-    </keybind>
-    <keybind key="S-Print">
-      <action name="Execute">
-        <command>~/.local/bin/screenshot-selection.sh</command>
-      </action>
-    </keybind>
     <!-- Dunst-specifics. -->
     <keybind key="C-Escape">
       <action name="Execute">
@@ -469,7 +405,7 @@
     <!-- Misc. -->
     <keybind key="W-e">
       <action name="Execute">
-        <command>~/.local/bin/launch-apps.sh file_manager</command>
+        <command>xdg-open .</command>
       </action>
     </keybind>
     <keybind key="W-l">
@@ -479,17 +415,22 @@
     </keybind>
     <keybind key="W-Return">
       <action name="Execute">
-        <command>~/.local/bin/launch-apps.sh terminal</command>
+        <command>xdg-terminal</command>
       </action>
     </keybind>
     <keybind key="W-S-Return">
       <action name="Execute">
-        <command>~/.config/openbox/joyful-desktop/terminal-set.sh reverse</command>
+        <command>xfce4-terminal</command>
       </action>
     </keybind>
-    <keybind key="W-S-r">
+    <keybind key="W-S-R">
       <action name="Execute">
-        <command>~/.config/openbox/joyful-desktop/toggle-mode.sh apply</command>
+        <command>openbox --restart</command>
+      </action>
+    </keybind>
+    <keybind key="W-C-R">
+      <action name="Execute">
+        <command>openbox --reconfigure</command>
       </action>
     </keybind>
   </keyboard>

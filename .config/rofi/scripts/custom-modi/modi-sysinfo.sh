@@ -1,13 +1,4 @@
 #!/bin/sh
-
-# Desc:   Custom system-info modi for rofi.
-# Author: Harry Kurn <alternate-se7en@pm.me>
-# URL:    https://github.com/owl4ce/dotfiles/tree/ng/.config/rofi/scripts/custom-modi/modi-sysinfo.sh
-
-# SPDX-License-Identifier: ISC
-
-# shellcheck disable=SC2166,SC2034,SC2086
-
 export LANG='POSIX'
 exec 2>/dev/null
 
@@ -126,15 +117,15 @@ done
 
 G_='' G="<span font_desc='${ROW_ICON_FONT}' weight='bold'>${G_}</span>   ${PKGS_INFO%,\ }"
 
-#if [ -x "$(command -v xprop)" ]; then
+if [ -x "$(command -v xprop)" ]; then
 
-    #XPROP_NET_SUPPORTING_WM_CHECK="$(xprop -root -notype _NET_SUPPORTING_WM_CHECK)" \
-    #XPROP_NET_WM_NAME="$(xprop -id "${XPROP_NET_SUPPORTING_WM_CHECK##*#\ }" -notype _NET_WM_NAME)" \
-    #_NET_WM_NAME="${XPROP_NET_WM_NAME#_NET_WM_NAME\ =\ \"}"
+    XPROP_NET_SUPPORTING_WM_CHECK="$(xprop -root -notype _NET_SUPPORTING_WM_CHECK)" \
+    XPROP_NET_WM_NAME="$(xprop -id "${XPROP_NET_SUPPORTING_WM_CHECK##*#\ }" -notype _NET_WM_NAME)" \
+    _NET_WM_NAME="${XPROP_NET_WM_NAME#_NET_WM_NAME\ =\ \"}"
 
-    #G_='' G="<span font_desc='${ROW_ICON_FONT}' weight='bold'>${G_}</span>   ${_NET_WM_NAME%\"}"
+    G_='' G="<span font_desc='${ROW_ICON_FONT}' weight='bold'>${G_}</span>   ${_NET_WM_NAME%\"}"
 
-#fi
+fi
 
 MESSAGE='🌸'
 

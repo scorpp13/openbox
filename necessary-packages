@@ -11,6 +11,7 @@
 	dunst
 	fastfetch
 	fish # zsh
+	flameshot
 	gcc
     geany
 	git-core
@@ -38,7 +39,6 @@
 	python311-psutil
 	python311-pycairo-devel #! needed for waypaper
 	rofi
-    scrot
     tint2
 	thunar
 	thunar-archive-plugin

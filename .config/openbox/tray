@@ -1,8 +1,0 @@
-# Each line parsed as individual execution processes,
-# don't use shell-syntaxis, only `command [options]`.
-
-parcellite
-pasystray
-nm-applet
-xfce4-power-manager
-udiskie -Ans
