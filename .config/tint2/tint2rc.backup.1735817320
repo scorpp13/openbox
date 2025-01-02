@@ -145,7 +145,7 @@ autohide_show_timeout = 0
 autohide_hide_timeout = 0
 autohide_height = 1
 strut_policy = follow_size
-panel_window_name = mechanical.artistic.tint2
+panel_window_name = dark.tint2
 disable_transparency = 1
 mouse_effects = 1
 font_shadow = 0
@@ -262,8 +262,9 @@ ac_disconnected_cmd =
 
 #-------------------------------------
 # Button 1
+#    
 button = new
-button_text = 
+button_text = 
 button_tooltip = [L] Main Menu [R] Extensions Menu
 button_lclick_command = ~/.config/rofi/scripts/rofi-main.sh
 button_rclick_command = ~/.config/rofi/scripts/rofi-exts.sh
@@ -298,7 +299,7 @@ button_max_icon_size = 0
 # Button 3
 button = new
 button_text = 
-button_tooltip = Change Button-Style for openbox window
+button_tooltip = Change Button's Style
 button_lclick_command = ~/.local/bin/mod-button.sh
 button_rclick_command = 
 button_mclick_command = 
@@ -315,7 +316,7 @@ button_max_icon_size = 0
 # Button 4
 button = new
 button_text = 
-button_tooltip = Switch Theme/Mode
+button_tooltip = Change Theme
 button_lclick_command = ~/.config/rofi/scripts/rofi-exts.sh theme
 button_rclick_command = 
 button_mclick_command = 
@@ -331,10 +332,10 @@ button_max_icon_size = 0
 #-------------------------------------
 # Button 5
 button = new
-button_text = 
-button_tooltip = [L] Toggle V/H Panel [R] Swap L/R/T/B Panel
-button_lclick_command = ~/.config/openbox/obox-desktop/toggle-orientation.sh vh
-button_rclick_command = ~/.config/openbox/obox-desktop/toggle-orientation.sh lrtb
+button_text = 
+button_tooltip = Web Browser
+button_lclick_command = firefox
+button_rclick_command = 
 button_mclick_command = 
 button_uwheel_command = 
 button_dwheel_command = 
@@ -351,7 +352,7 @@ button = new
 button_text = 
 button_tooltip = [L] Power Menu [R] Media Menu
 button_lclick_command = ~/.config/rofi/scripts/rofi-exts.sh session
-button_rclick_command = ~/.config/rofi/scripts/rofi-exts.sh media
+button_rclick_command = ~/.config/rofi/scripts/rofi-exts.sh system
 button_mclick_command = 
 button_uwheel_command = 
 button_dwheel_command = 

@@ -1,9 +1,9 @@
 picom --daemon &
 lxpolkit &
 light-locker &
-tint2 -c $HOME/.config/tint2/mechanical-vertical.artistic.tint2rc &
-$HOME/.fehbg &
 dunst &
+$HOME/.fehbg &
+tint2 &
 parcellite &
 pasystray &
 nm-applet &

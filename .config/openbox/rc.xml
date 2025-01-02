@@ -49,7 +49,7 @@
          C: close
          S: shade (roll up/down)
          D: omnipresent (on all desktops) -->
-    <titleLayout>LIMC</titleLayout>
+    <titleLayout>NLIMC</titleLayout>
     <keepBorder>yes</keepBorder>
     <animateIconify>yes</animateIconify>
     <font place="ActiveWindow">
@@ -111,17 +111,13 @@
        these are default values to use when other ones are not already set by other applications,
        or saved in your session use obconf if you want to change these without having to log out and back in. -->
   <desktops>
-    <number>8</number>
+    <number>4</number>
     <firstdesk>1</firstdesk>
     <names>
       <name>1</name>
       <name>2</name>
       <name>3</name>
       <name>4</name>
-      <name>5</name>
-      <name>6</name>
-      <name>7</name>
-      <name>8</name>
     </names>
     <!-- The number of milliseconds to show the popup for when switching desktops.
          Set this to 0 to disable the popup. -->
@@ -255,26 +251,6 @@
         <to>4</to>
       </action>
     </keybind>
-    <keybind key="W-5">
-      <action name="GoToDesktop">
-        <to>5</to>
-      </action>
-    </keybind>
-    <keybind key="W-6">
-      <action name="GoToDesktop">
-        <to>6</to>
-      </action>
-    </keybind>
-    <keybind key="W-7">
-      <action name="GoToDesktop">
-        <to>7</to>
-      </action>
-    </keybind>
-    <keybind key="W-8">
-      <action name="GoToDesktop">
-        <to>8</to>
-      </action>
-    </keybind>
     <keybind key="W-S-1">
       <action name="SendToDesktop">
         <to>1</to>
@@ -293,26 +269,6 @@
     <keybind key="W-S-4">
       <action name="SendToDesktop">
         <to>4</to>
-      </action>
-    </keybind>
-    <keybind key="W-S-5">
-      <action name="SendToDesktop">
-        <to>5</to>
-      </action>
-    </keybind>
-    <keybind key="W-S-6">
-      <action name="SendToDesktop">
-        <to>6</to>
-      </action>
-    </keybind>
-    <keybind key="W-S-7">
-      <action name="SendToDesktop">
-        <to>7</to>
-      </action>
-    </keybind>
-    <keybind key="W-S-8">
-      <action name="SendToDesktop">
-        <to>8</to>
       </action>
     </keybind>
     <!-- Basic window control and menus. -->
@@ -365,52 +321,27 @@
         </finalactions>
       </action>
     </keybind>
-    <!-- Rofi-menu scripts. -->
-    <keybind key="W-Escape">
+    <!-- Rofi extras menu -->
+    <keybind key="W-R">
       <action name="Execute">
         <command>~/.config/rofi/scripts/rofi-exts.sh</command>
       </action>
     </keybind>
-    <keybind key="W-Print">
-      <action name="Execute">
-        <command>~/.config/rofi/scripts/rofi-exts.sh screenshot</command>
-      </action>
-    </keybind>
-    <keybind key="W-r">
-      <action name="Execute">
-        <command>~/.config/rofi/scripts/rofi-main.sh</command>
-      </action>
-    </keybind>
-    <!-- Dunst-specifics. -->
+    <!-- Dunst-specifics -->
     <keybind key="C-Escape">
       <action name="Execute">
         <command>dunstctl history-pop</command>
       </action>
     </keybind>
-    <keybind key="C-Return">
-      <action name="Execute">
-        <command>dunstctl context</command>
-      </action>
-    </keybind>
-    <keybind key="C-space">
-      <action name="Execute">
-        <command>dunstctl close</command>
-      </action>
-    </keybind>
-    <keybind key="C-S-space">
-      <action name="Execute">
-        <command>dunstctl close-all</command>
-      </action>
-    </keybind>
-    <!-- Misc. -->
+    <!-- Miscellaneous -->
     <keybind key="W-e">
       <action name="Execute">
         <command>xdg-open .</command>
       </action>
     </keybind>
-    <keybind key="W-l">
+    <keybind key="W-w">
       <action name="Execute">
-        <command>loginctl --no-ask-password lock-session</command>
+        <command>xdg-open http://</command>
       </action>
     </keybind>
     <keybind key="W-Return">
@@ -418,7 +349,7 @@
         <command>xdg-terminal</command>
       </action>
     </keybind>
-    <keybind key="W-S-Return">
+    <keybind key="W-C-Return">
       <action name="Execute">
         <command>xfce4-terminal</command>
       </action>
@@ -434,6 +365,7 @@
       </action>
     </keybind>
   </keyboard>
+  <!-- Mouse settings -->
   <mouse>
     <!-- Number of pixels the mouse must move before a drag begins. -->
     <dragThreshold>1</dragThreshold>

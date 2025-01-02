@@ -145,7 +145,7 @@ autohide_show_timeout = 0
 autohide_hide_timeout = 0
 autohide_height = 1
 strut_policy = follow_size
-panel_window_name = mechanical.artistic.tint2
+panel_window_name = dark.tint2
 disable_transparency = 1
 mouse_effects = 1
 font_shadow = 0
@@ -169,7 +169,7 @@ taskbar_always_show_all_desktop_tasks = 0
 taskbar_name_padding = 6 0
 taskbar_name_background_id = 3
 taskbar_name_active_background_id = 3
-taskbar_name_font = Iosevka 8
+taskbar_name_font = Iosevka 8.3
 taskbar_name_font_color = #3b4252 100
 taskbar_name_active_font_color = #3b4252 100
 taskbar_distribute_size = 0
@@ -223,12 +223,12 @@ launcher_tooltip = 0
 
 #-------------------------------------
 # Clock
-time1_format = %H
-time2_format = %M
-time1_font = Iosevka Bold 8
+time1_format = %H:%M
+time2_format = 
+time1_font = Iosevka Bold 16
 time1_timezone = 
 time2_timezone = 
-time2_font = Iosevka Bold 8
+time2_font = Iosevka Bold 10
 clock_font_color = #f9f9f9 100
 clock_padding = 3 0
 clock_background_id = 4
@@ -262,6 +262,7 @@ ac_disconnected_cmd =
 
 #-------------------------------------
 # Button 1
+#    
 button = new
 button_text = 
 button_tooltip = [L] Main Menu [R] Extensions Menu
@@ -298,10 +299,10 @@ button_max_icon_size = 0
 # Button 3
 button = new
 button_text = 
-button_tooltip = [L] Change Window Button-Style [R] Swap Window Button-Location L/R [M] Toggle Decoration
-button_lclick_command = ~/.config/openbox/joyful-desktop/ob-button-set.sh
-button_rclick_command = ~/.config/openbox/joyful-desktop/ob-button-set.sh swap
-button_mclick_command = ~/.config/openbox/joyful-desktop/ob-button-set.sh decor
+button_tooltip = Change Button's Style
+button_lclick_command = ~/.local/bin/mod-button.sh
+button_rclick_command = 
+button_mclick_command = 
 button_uwheel_command = 
 button_dwheel_command = 
 button_font = Material 17
@@ -315,7 +316,7 @@ button_max_icon_size = 0
 # Button 4
 button = new
 button_text = 
-button_tooltip = Switch Theme/Mode
+button_tooltip = Change Theme
 button_lclick_command = ~/.config/rofi/scripts/rofi-exts.sh theme
 button_rclick_command = 
 button_mclick_command = 
@@ -331,10 +332,10 @@ button_max_icon_size = 0
 #-------------------------------------
 # Button 5
 button = new
-button_text = 
-button_tooltip = [L] Toggle V/H Panel [R] Swap L/R/T/B Panel
-button_lclick_command = ~/.config/openbox/joyful-desktop/toggle-orientation.sh vh
-button_rclick_command = ~/.config/openbox/joyful-desktop/toggle-orientation.sh lrtb
+button_text = 
+button_tooltip = Web Browser
+button_lclick_command = firefox
+button_rclick_command = 
 button_mclick_command = 
 button_uwheel_command = 
 button_dwheel_command = 
@@ -351,7 +352,7 @@ button = new
 button_text = 
 button_tooltip = [L] Power Menu [R] Media Menu
 button_lclick_command = ~/.config/rofi/scripts/rofi-exts.sh session
-button_rclick_command = ~/.config/rofi/scripts/rofi-exts.sh media
+button_rclick_command = ~/.config/rofi/scripts/rofi-exts.sh system
 button_mclick_command = 
 button_uwheel_command = 
 button_dwheel_command = 
@@ -366,12 +367,12 @@ button_max_icon_size = 0
 # Button 7
 button = new
 button_text = 
-button_tooltip = [L] Screenshot [R] Screenshot Menu [M] Selection Screenshot [S] Countdown Screenshot
-button_lclick_command = ~/.local/bin/screenshot-screen.sh
+button_tooltip = Screenshot
+button_lclick_command = flameshot launcher
 button_rclick_command = ~/.config/rofi/scripts/rofi-exts.sh screenshot
-button_mclick_command = ~/.local/bin/screenshot-selection.sh
-button_uwheel_command = ~/.local/bin/screenshot-countdown.sh
-button_dwheel_command = ~/.local/bin/screenshot-countdown.sh
+button_mclick_command = 
+button_uwheel_command = 
+button_dwheel_command = 
 button_font = Material 17
 button_font_color = #f9f9f9 100
 button_padding = 4 0
@@ -383,7 +384,7 @@ button_max_icon_size = 0
 # Button 8
 button = new
 button_text = 
-button_tooltip = [L] mpvGui [R] mpvMusic [S] mpvKill
+button_tooltip = [L] mpv_gui [R] mpv_music [S] mpv_kill
 button_lclick_command = mpv --player-operation-mode=pseudo-gui --idle
 button_rclick_command = mpv $HOME/Music
 button_mclick_command = killall mpv
@@ -403,5 +404,5 @@ tooltip_hide_timeout = 0.2
 tooltip_padding = 8 6
 tooltip_background_id = 7
 tooltip_font_color = #f9f9f9 100
-tooltip_font = Cantarell 9
+tooltip_font = Cantarell 11
 
