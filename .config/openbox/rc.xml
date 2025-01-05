@@ -40,7 +40,7 @@
     <primaryMonitor>1</primaryMonitor>
   </placement>
   <theme>
-    <name>Fleon</name>
+    <name>Avokado</name>
     <!-- Available characters are NDSLIMC, each can occur at most once.
          N: window icon
          L: window label (AKA title)
@@ -145,10 +145,10 @@
        or when they are initially placed. Many programs reserve space automatically,
        but you can use this in other cases. -->
   <margins>
-    <top>10</top>
-    <bottom>10</bottom>
-    <left>55</left>
-    <right>10</right>
+    <top>5</top>
+    <bottom>5</bottom>
+    <left>50</left>
+    <right>5</right>
   </margins>
   <dock>
     <!-- (Top|Bottom)(Left|Right|)|Top|Bottom|Left|Right|Floating -->

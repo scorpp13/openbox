@@ -76,4 +76,4 @@ button {
   margin: -1px;
 }
 
-@import "themes/colorschemes/mechanical.rasi"
+@import "themes/colorschemes/avokado.rasi"

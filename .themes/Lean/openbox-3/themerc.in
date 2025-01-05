@@ -1,0 +1,64 @@
+border.width: [B? 1 ! 0]
+padding.width: 4
+padding.height: 2
+window.client.padding.width: 0
+window.client.padding.height: 0
+window.handle.width: 4
+
+*.active.border.color: {AL}
+*.inactive.border.color: {NL}
+
+window.*.grip.bg: parentrelative
+window.*.title.bg: [R? raised ! flat] [G? vertical gradient ! solid]
+window.*.label.bg: parentrelative
+window.*.button.*.bg: parentrelative
+window.*.handle.bg: [R? raised ! flat] [G? vertical gradient ! solid]
+window.*.text.justify: center
+
+window.active.title.bg.color: {AB}
+window.active.title.bg.colorTo: {AB AB AB #000000}
+window.active.label.text.color: {AF}
+window.active.button.*.unpressed.image.color: {AF}
+window.active.button.*.disabled.image.color: {AF AB AB}
+window.active.button.*.hover.image.color: {AF AB}
+window.active.button.*.pressed.image.color: {AB #000000}
+window.active.handle.bg.color: [H? {AB} ! {NB}]
+window.active.handle.bg.colorTo: [H? {AB AB #000000} ! {NB NB #000000}]
+
+window.inactive.title.bg.color: {NB}
+window.inactive.title.bg.colorTo: {NB NB NB #000000}
+window.inactive.label.text.color: {NB NF}
+window.inactive.button.*.unpressed.image.color: {NB NF}
+window.inactive.button.*.disabled.image.color: {NB NB NF}
+window.inactive.button.*.hover.image.color: {NF}
+window.inactive.button.*.pressed.image.color: {NB #000000}
+window.inactive.handle.bg.color: {NB}
+window.inactive.handle.bg.colorTo: {NB NB #000000}
+
+menu.title.bg: [R? raised ! flat] [G? vertical gradient ! solid]
+menu.title.bg.color: {AB}
+menu.title.bg.colorTo: {AB AB AB #000000}
+menu.title.text.color: {AF}
+menu.items.bg: [R? raised ! flat] [G? diagonal gradient ! solid]
+menu.items.bg.color: {NB}
+menu.items.bg.colorTo: {NB NB NB #000000}
+menu.items.text.color: {NF}
+menu.items.disabled.text.color: {NF NB NB}
+menu.items.active.bg: [R? raised ! flat] [G? vertical gradient ! solid]
+menu.items.active.bg.color: {AB}
+menu.items.active.bg.colorTo: {AB AB AB #000000}
+menu.items.active.text.color: {AF}
+menu.items.active.disabled.text.color: {AF AB AB}
+menu.separator.color: {AL}
+menu.separator.padding.width: 0
+menu.separator.width: 1
+
+osd.bg: [R? raised ! flat] [G? diagonal gradient ! solid]
+osd.bg.color: {NB}
+osd.bg.colorTo: {NB NB NB #000000}
+osd.unhilight.bg: [R? raised ! flat] [G? diagonal gradient ! solid]
+osd.unhilight.bg.color: {NB}
+osd.unhilight.bg.colorTo: {NB NB NB #000000}
+osd.hilight.bg: [R? raised ! flat] [G? diagonal gradient ! solid]
+osd.hilight.bg.color: {AB}
+osd.hilight.bg.colorTo: {AB AB AB #000000}
