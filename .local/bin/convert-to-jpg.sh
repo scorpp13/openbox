@@ -6,4 +6,5 @@ INPUT=$(find "$DIR" | gum choose --no-limit)
 gum confirm "Convert selected images?" && \
 gum spin --title "Converting..." -- sleep 1 && \
 cd "$DIR" && mogrify -format jpg "$INPUT"
-exit ${?}
+echo ''
+read -rp "Press Enter to continue" </dev/tty

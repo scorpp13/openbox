@@ -262,12 +262,12 @@ ac_disconnected_cmd =
 
 #-------------------------------------
 # Button 1
-#    
+#      
 button = new
-button_text = 
-button_tooltip = [L] Main Menu [R] Extensions Menu
+button_text = 
+button_tooltip = Apps / Scripts
 button_lclick_command = ~/.config/rofi/scripts/rofi-main.sh
-button_rclick_command = ~/.config/rofi/scripts/rofi-exts.sh
+button_rclick_command = ~/.config/rofi/scripts/rofi-exts.sh scripts
 button_mclick_command = 
 button_uwheel_command = 
 button_dwheel_command = 
@@ -282,7 +282,7 @@ button_max_icon_size = 0
 # Button 2
 button = new
 button_text = 
-button_tooltip = Change Wallpaper
+button_tooltip = Wallpaper
 button_lclick_command = waypaper
 button_rclick_command = 
 button_mclick_command = 
@@ -297,10 +297,11 @@ button_max_icon_size = 0
 
 #-------------------------------------
 # Button 3
+#    
 button = new
-button_text = 
-button_tooltip = Change Button's Style
-button_lclick_command = ~/.local/bin/mod-button.sh
+button_text = 
+button_tooltip = YaST
+button_lclick_command = alacritty -e sudo yast2
 button_rclick_command = 
 button_mclick_command = 
 button_uwheel_command = 
@@ -316,7 +317,7 @@ button_max_icon_size = 0
 # Button 4
 button = new
 button_text = 
-button_tooltip = Change Theme
+button_tooltip = Theme
 button_lclick_command = ~/.config/rofi/scripts/rofi-exts.sh theme
 button_rclick_command = 
 button_mclick_command = 
@@ -333,7 +334,7 @@ button_max_icon_size = 0
 # Button 5
 button = new
 button_text = 
-button_tooltip = Web Browser
+button_tooltip = Browser
 button_lclick_command = firefox
 button_rclick_command = 
 button_mclick_command = 
@@ -350,7 +351,7 @@ button_max_icon_size = 0
 # Button 6
 button = new
 button_text = 
-button_tooltip = [L] Power Menu [R] Media Menu
+button_tooltip = Power / Sysinfo
 button_lclick_command = ~/.config/rofi/scripts/rofi-exts.sh session
 button_rclick_command = ~/.config/rofi/scripts/rofi-exts.sh system
 button_mclick_command = 
@@ -369,7 +370,7 @@ button = new
 button_text = 
 button_tooltip = Screenshot
 button_lclick_command = flameshot launcher
-button_rclick_command = ~/.config/rofi/scripts/rofi-exts.sh screenshot
+button_rclick_command = 
 button_mclick_command = 
 button_uwheel_command = 
 button_dwheel_command = 
@@ -384,10 +385,10 @@ button_max_icon_size = 0
 # Button 8
 button = new
 button_text = 
-button_tooltip = [L] mpv_gui [R] mpv_music [S] mpv_kill
+button_tooltip = MPV / Volume
 button_lclick_command = mpv --player-operation-mode=pseudo-gui --idle
-button_rclick_command = mpv $HOME/Music
-button_mclick_command = killall mpv
+button_rclick_command = ~/.config/rofi/scripts/rofi-exts.sh media
+button_mclick_command = 
 button_uwheel_command = 
 button_dwheel_command = 
 button_font = Material 17
@@ -405,4 +406,3 @@ tooltip_padding = 8 6
 tooltip_background_id = 7
 tooltip_font_color = #f9f9f9 100
 tooltip_font = Cantarell 11
-

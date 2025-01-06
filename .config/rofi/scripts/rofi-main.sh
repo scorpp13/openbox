@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/bash
 
 SYSTEM_LANG="$LANG"
 export LANG='POSIX'

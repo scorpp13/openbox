@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/bash
 export LANG='POSIX'
 exec 2>/dev/null
 
@@ -103,7 +103,7 @@ for MANAGER in ${PKG_MANAGER#\ }; do
         ;;
     esac
 
-    TOTAL_PKGS="$(($(set -- ${GET_PKGS}; echo "${#}") - PKG_XCPT))"
+    TOTAL_PKGS="$(($(set -- "${GET_PKGS}"; echo "${#}") - PKG_XCPT))"
 
     case "$TOTAL_PKGS" in
         0|1) TOTAL_PKGS='?'
@@ -127,7 +127,7 @@ if [ -x "$(command -v xprop)" ]; then
 
 fi
 
-MESSAGE='🌸'
+MESSAGE="<span font_desc='${MSG_ICON_FONT}' weight='bold'></span>"
 
 printf '%b\n' '\0use-hot-keys\037true' '\0markup-rows\037true' "\0message\037${MESSAGE}"
 printf '%s\0nonselectable\037true\n' "$A" "$B" "$C" "$D" "$E" "$F" "$G"

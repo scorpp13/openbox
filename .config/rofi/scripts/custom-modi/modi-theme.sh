@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/bash
 
 export LANG='POSIX'
 exec 2>/dev/null
@@ -11,19 +11,25 @@ esac
 ROW_ICON_FONT='feather 12'
 MSG_ICON_FONT='feather 48'
 
-A_='' A="<span font_desc='${ROW_ICON_FONT}' weight='bold'>${A_}</span>   Change Theme"
-B_='' B="<span font_desc='${ROW_ICON_FONT}' weight='bold'>${B_}</span>   Change Mode"
+A_='' A="<span font_desc='${ROW_ICON_FONT}' weight='bold'>${A_}</span>   Rofi Theme"
+B_='' B="<span font_desc='${ROW_ICON_FONT}' weight='bold'>${B_}</span>   Desktop Theme"
+C_='' C="<span font_desc='${ROW_ICON_FONT}' weight='bold'>${C_}</span>   Tint2 Theme"
+D_='' D="<span font_desc='${ROW_ICON_FONT}' weight='bold'>${D_}</span>   Qt Theme"
 
 case "${@}" in
-    "$A") joyd_toggle_mode
+    "$A") eval 'exec alacritty -e rtheme.sh >&2'
     ;;
-    "$B") joyd_toggle_mode mode
+    "$B") eval 'exec lxappearance >&2'
+    ;;
+    "$C") eval 'exec tint2conf >&2'
+    ;;
+    "$D") eval 'exec qt6ct >&2'
     ;;
 esac
 
 MESSAGE="<span font_desc='${MSG_ICON_FONT}' weight='bold'></span>"
 
 printf '%b\n' '\0use-hot-keys\037true' '\0markup-rows\037true' "\0message\037${MESSAGE}" \
-              "$A" "$B" "$C"
+              "$A" "$B" "$C" "$D"
 
 exit ${?}

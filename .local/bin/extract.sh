@@ -23,4 +23,5 @@ if [ -f "$INPUT" ] ; then
 		else
 			echo "'$INPUT' isn't a valid archive file"
 fi
-exit ${?}
+echo ''
+read -rp "Press Enter to continue" </dev/tty

@@ -1,5 +1,7 @@
 // main_config_file
 
+@import "config_theme"
+
 configuration {
 
   filebrowser {
@@ -75,5 +77,3 @@ mode-switcher {
 button {
   margin: -1px;
 }
-
-@import "themes/colorschemes/avokado.rasi"

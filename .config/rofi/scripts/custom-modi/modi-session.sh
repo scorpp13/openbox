@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/bash
 
 export LANG='POSIX'
 exec 2>/dev/null
@@ -46,7 +46,7 @@ case "${@}" in
     ;;
     "$E"     ) prompt "$E_" "${SYSTEMCTL:-loginctl} --no-ask-password suspend"
     ;;
-    "$F"     ) prompt "$F_" 'loginctl --no-ask-password kill-user ${EUID:-$(id -u)} --signal=SIGKILL'
+    "$F"     ) prompt "$F_" "loginctl --no-ask-password kill-user ${EUID:-$(id -u)} --signal=SIGKILL"
     ;;
     "$Y"|"$Z") eval "exec ${ROFI_INFO#\#} >&2"
     ;;

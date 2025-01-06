@@ -11,4 +11,5 @@ FORMAT=$(gum input --prompt "Merging format: " --placeholder "columns X lines")
 gum confirm "Merge selected images?" && \
 gum spin --title "Merging..." -- sleep 1 && cd "$DIR" && \
 montage "$INPUT" -tile "$FORMAT" -geometry +0+0 "$OUTPUT"."$EXTENSION"
-exit ${?}
+echo ''
+read -rp "Press Enter to continue" </dev/tty

@@ -12,4 +12,6 @@ MAXCOLORS=$(gum input --prompt "Max Colors: " --placeholder "Max Colors" --promp
 BASENAME=$(basename "$INPUT")
 BASENAME="${BASENAME%%.*}"
 
-gum spin --title "Converting to GIF" -- ffmpeg -i "$INPUT" -vf "fps=$FRAMERATE,scale=$WIDTH:-1:flags=lanczos,split[s0][s1];[s0]palettegen=max_colors=$MAXCOLORS[p];[s1][p]paletteuse" "$BASENAME.gif"
+gum spin --title "Converting to GIF" -- ffmpeg -i "$INPUT" -vf "fps=${FRAMERATE},scale=$WIDTH:-1:flags=lanczos,split[s0][s1];[s0]palettegen=max_colors=${MAXCOLORS}[p];[s1][p]paletteuse" "$BASENAME.gif"
+echo ''
+read -rp "Press Enter to continue" </dev/tty
