@@ -21,7 +21,7 @@ Y_='' Y="<span font_desc='${ROW_ICON_FONT}' weight='bold'>${Y_}</span>   Conf
 N_='' N="<span font_desc='${ROW_ICON_FONT}' weight='bold'>${N_}</span>   Cancel"
 Z_='' Z="<span font_desc='${ROW_ICON_FONT}' weight='bold'>${Z_}</span>   Firmware Setup"
 
-SYSTEMCTL="$(command -v systemctl)" # owl4ce/dotfiles #180.
+SYSTEMCTL="$(command -v systemctl)"
 
 prompt()
 {
