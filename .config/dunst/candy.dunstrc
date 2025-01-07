@@ -1,5 +1,4 @@
-# User's dunst configuration. EyeCandy artistic.
-# https://github.com/owl4ce/dotfiles
+# candy dunst theme
 
 [global]
 follow = mouse
@@ -26,13 +25,10 @@ format = "<span size='x-large' font_desc='Cantarell,mplus Nerd Font 9' weight='b
 
 show_age_threshold = 60
 icon_position = left
-max_icon_size = 80
-
+min_icon_size = 48
+max_icon_size = 96
 enable_recursive_icon_lookup = true
 icon_theme = "Papirus-Custom"
-icon_size = 48
-
-sticky_history = false
 
 dmenu = "rofi -theme-str '@import "action.rasi"' -no-show-icons -no-lazy-grab -no-plugins -dmenu -mesg 'Context Menu'"
 
@@ -42,6 +38,7 @@ mouse_left_click = close_current
 mouse_middle_click = context_all
 mouse_right_click = close_all
 
+sticky_history = false
 alignment = center
 markup = full
 always_run_script = true
@@ -64,6 +61,6 @@ background = "#f9f9f9"
 foreground = "#373e4d"
 highlight = "#fa74b2"
 
-[joyful_desktop]
-appname = "joyful_desktop"
+[obox_desktop]
+appname = "obox_desktop"
 history_ignore = true
