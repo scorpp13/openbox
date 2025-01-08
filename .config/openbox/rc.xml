@@ -346,7 +346,7 @@
     </keybind>
     <keybind key="W-Return">
       <action name="Execute">
-        <command>xdg-terminal</command>
+        <command>alacritty</command>
       </action>
     </keybind>
     <keybind key="W-C-Return">

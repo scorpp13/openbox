@@ -10,7 +10,5 @@ export LESSHISTFILE='/dev/null'
 
 export QT_QPA_PLATFORMTHEME='qt6ct'
 export EDITOR='vim'
-export TERM='alacritty'
 export LANG='ru_RU.UTF-8'
-export BROWSER='firefox'
 export G_SLICE='allways-malloc'

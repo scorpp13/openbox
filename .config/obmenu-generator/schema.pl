@@ -35,7 +35,7 @@ our $SCHEMA = [
     #          COMMAND              LABEL          ICON
     {item => ['xdg-open .',        'Файлы',       'system-file-manager']},
     {item => ['alacritty -e vifm', 'Vifm',        'system-file-manager']},
-    {item => ['xdg-terminal',      'Терминал',    'utilities-terminal']},
+    {item => ['alacritty',      'Терминал',    'utilities-terminal']},
     {item => ['xdg-open http://',  'Браузер',     'web-browser']},
 
     {sep => 'КАТЕГОРИИ'},
