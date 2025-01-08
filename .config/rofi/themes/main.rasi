@@ -67,7 +67,7 @@ element.normal.normal,
 element.alternate.normal {
   background-color: @background-light;
   text-color: inherit;
-  border-color: @background-light;
+  border-color: transparent;
 }
 
 element.normal.active,
