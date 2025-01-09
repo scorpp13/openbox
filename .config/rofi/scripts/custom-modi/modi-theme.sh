@@ -19,9 +19,9 @@ E_='' E="<span font_desc='${ROW_ICON_FONT}' weight='bold'>${E_}</span>   GTK 
 F_='' F="<span font_desc='${ROW_ICON_FONT}' weight='bold'>${F_}</span>   Qt Theme"
 
 case "${@}" in
-    "$A") eval 'exec alacritty -e rofi-theme.sh >&2'
+    "$A") eval 'exec kitty -e rofi-theme.sh >&2'
     ;;
-    "$B") eval 'exec alacritty -e dunst-theme.sh >&2'
+    "$B") eval 'exec kitty -e dunst-theme.sh >&2'
     ;;
     "$C") eval 'exec obconf >&2'
     ;;

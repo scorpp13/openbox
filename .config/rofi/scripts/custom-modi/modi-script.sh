@@ -18,15 +18,15 @@ D_='' D="<span font_desc='${ROW_ICON_FONT}' weight='bold'>${D_}</span>   GIF 
 E_='' E="<span font_desc='${ROW_ICON_FONT}' weight='bold'>${E_}</span>   Merge images"
 
 case "${@}" in
-    "$A") eval 'exec alacritty -e extract.sh >&2'
+    "$A") eval 'exec kitty -e extract.sh >&2'
     ;;
-    "$B") eval 'exec alacritty -e fontsearch.sh >&2'
+    "$B") eval 'exec kitty -e fontsearch.sh >&2'
     ;;
-    "$C") eval 'exec alacritty -e convert-to-jpg.sh >&2'
+    "$C") eval 'exec kitty -e convert-to-jpg.sh >&2'
     ;;
-    "$D") eval 'exec alacritty -e convert-to-gif.sh >&2'
+    "$D") eval 'exec kitty -e convert-to-gif.sh >&2'
     ;;
-    "$E") eval 'exec alacritty -e merge_img.sh >&2'
+    "$E") eval 'exec kitty -e merge_img.sh >&2'
     ;;
 esac
 

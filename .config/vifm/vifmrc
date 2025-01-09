@@ -12,8 +12,8 @@ elseif executable('nvim')
     set vicmd=nvim
 elseif executable('helix')
     set vicmd=hx
-elseif executable('nano')
-    set vicmd=nano
+elseif executable('micro')
+    set vicmd=micro
 elseif $EDITOR != ''
     echo 'Note: using `'.$EDITOR.'` as an editor'
     let &vicmd = $EDITOR
@@ -92,29 +92,31 @@ endif
 " Set custom status line look
 set statusline="%t%[ -> %T%] %6E %12A %=%d %5u:%g"
 
- colorscheme dracula
+" colorscheme dracula
 " colorscheme dwmlight
 " colorscheme gruvbox
+colorscheme luke
+" colorscheme material
 " colorscheme papercolor-dark
 " colorscheme papercolor-light
-" colorscheme reicheltd-light
-" colorscheme solarized-dark
 
 " ------------------------------------------------------------------------------
 " Bookmarks
 " ------------------------------------------------------------------------------
 
-mark c ~/.config/
-mark d ~/Downloads/
+mark b ~/.backup
+mark c ~/.config
+mark d ~/Downloads
+mark e /etc
 mark h ~/
-mark g ~/Documents/
-mark l ~/.local/
-mark m /run/media/as/
+mark l ~/.local
+mark m /run/media/as
+mark p ~/Pictures
+mark s ~/Pictures/screenshots
 mark r /
-mark s ~/Pictures/Screenshots/
-mark u /usr/
-mark v ~/Videos/
-mark w ~/Pictures/Wallpapers/
+mark u /usr
+mark v ~/Video
+mark w ~/.config/wallpapers
 
 " ------------------------------------------------------------------------------
 " Commands
@@ -154,55 +156,10 @@ command! extract xarchiver -d %a
 fileviewer .git/
 	\ git status %d %pu
 
-fileviewer <image/gif>
-	\ #ueberzug#image_no_cache %px %py %pw %ph
-	\ %pc
-	\ #ueberzug#clear
-fileviewer <video/*>
-	\ #ueberzug#video %px %py %pw %ph
-	\ %pc
-	\ #ueberzug#clear
-fileviewer <image/*>
-	\ #ueberzug#image %px %py %pw %ph
-	" or \ #ueberzug#image_no_cache %px %py %pw %ph
-	\ %pc
-	\ #ueberzug#clear
-fileviewer <audio/*>
-	\ #ueberzug#audio %px %py %pw %ph
-	\ %pc
-	\ #ueberzug#clear
-fileviewer <font/*>
-	\ #ueberzug#djvu %px %py %pw %ph
-	\ %pc
-	\ #ueberzug#clear
-fileviewer *.pdf
-	\ #ueberzug#pdf %px %py %pw %ph
-	\ %pc
-	\ #ueberzug#clear
-fileviewer *.epub
-	\ #ueberzug#epub %px %py %pw %ph
-	\ %pc
-	\ #ueberzug#clear
-fileviewer *.djvu
-	\ #ueberzug#djvu %px %py %pw %ph
-	\ %pc
-	\ #ueberzug#clear
-fileviewer *.cbz
-	\ #ueberzug#cbz %px %py %pw %ph
-	\ %pc
-	\ #ueberzug#clear
-fileviewer *.cbt
-	\ #ueberzug#cbt %px %py %pw %ph %c
-	\ %pc
-	\ #ueberzug#clear
-fileviewer *.cbr
-	\ #ueberzug#cbr %px %py %pw %ph %c
-	\ %pc
-	\ #ueberzug#clear
-fileviewer *.cb7
-	\ #ueberzug#cb7 %px %py %pw %ph %c
-	\ %pc
-	\ #ueberzug#clear
+fileviewer {*.bmp,*.jpg,*.jpeg,*.png,*.gif,*.xpm,*.svg,*.ttf}
+    \ kitten icat --silent --transfer-mode=file --place=%pwx%ph@%pxx%py %c >/dev/tty </dev/tty %N
+    \ %pc
+    \ kitten icat --clear --silent >/dev/tty </dev/tty %N
 
 " Audio
 filetype {*.wav,*.mp3,*.flac,*.m4a,*.wma,*.ape,*.ac3,*.og[agx],*.spx,*.opus,
@@ -362,6 +319,9 @@ fileviewer *[^/] pygmentize -O style=monokai -f console256 -g
 " Sample keyboard mappings
 " ------------------------------------------------------------------------------
 
+" Clear image preview in single-pane mode
+nnoremap <silent> <C-o> :!kitten icat --clear --silent<cr>:wincmd o<cr>
+
 " Start shell in current directory
 "nnoremap s :shell<cr>
 nnoremap s :!fish <cr>
@@ -373,11 +333,11 @@ nnoremap S :sort<cr>
 nnoremap w :view<cr>
 vnoremap w :view<cr>gv
 
-" Open file in nano
-nnoremap o :!nano %f<cr>
+" Open file in micro
+nnoremap o :!micro %f<cr>
 
-" Open file in geany
-nnoremap e :!geany %f<cr>
+" Open file in mousepad
+nnoremap e :!mousepad %f<cr>
 
 " Open file in the background using its default program
 nnoremap gb :file &<cr>l
@@ -460,5 +420,5 @@ nnoremap <c-u> <c-w>x
 " ------------------------------------------------------------------------------
 
 " Add additional place to look for executables
-" let $PATH = $HOME.'/.vifm/scripts:'.$PATH
+"let $PATH = $HOME.'/.vifm/scripts:'.$PATH
 

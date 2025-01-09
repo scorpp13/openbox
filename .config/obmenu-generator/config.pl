@@ -73,7 +73,7 @@ our $CONFIG = {
                            },
   "locale_support"      => 1,
   "missing_icon"        => "gtk-missing-image",
-  "terminal"            => "xterm",
+  "terminal"            => "kitty",
   "unique_items"        => 0,
   "VERSION"             => 0.94,
 }

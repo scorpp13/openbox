@@ -346,12 +346,12 @@
     </keybind>
     <keybind key="W-Return">
       <action name="Execute">
-        <command>alacritty</command>
+        <command>kitty</command>
       </action>
     </keybind>
     <keybind key="W-C-Return">
       <action name="Execute">
-        <command>xfce4-terminal</command>
+        <command>alacritty</command>
       </action>
     </keybind>
     <keybind key="W-S-R">
