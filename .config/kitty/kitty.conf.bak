@@ -14,7 +14,7 @@ shell						/usr/bin/fish
 #-------------------------------------------------------------------
 
 # BEGIN_KITTY_THEME
-# GitHub Dark
+# Tomorrow Night Eighties
 include current-theme.conf
 # END_KITTY_THEME
 

@@ -1,7 +1,7 @@
 # necessary packages for openSUSE_Tumbleweed
 # suggest to start with  minimal-desktop e.g. icewm
 # install these packages with 'zypper in' command
-	alacritty
+	alacritty # install ueberzugpp to preview images
     alsa-utils
 # copy from https://github.com/jamielinux/bashmount to ~/.local/bin
 	bashmount
@@ -19,7 +19,7 @@
 # https://software.opensuse.org/download/package?package=gsimplecal&project=home%3AAndnoVember%3ALXQt
 	gsimplecal
 	gum
-	kitty
+	kitty # to preview images use built-in kitten icat, no need to install additional software
 	light-locker
 	lxappearance
     lxpolkit
@@ -45,7 +45,6 @@
 	thunar-archive-plugin
 	qt6ct
 	udiskie
-	ueberzugpp
 	xarchiver
 	xdg-desktop-portal-gtk
 	xdg-user-dirs-gtk
