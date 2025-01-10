@@ -76,47 +76,6 @@ if [ -x "$(command -v df)" ]; then
 
 fi
 
-for SYS_MANAGER in apt \
-                   emerge \
-                   flatpak \
-                   kiss \
-                   pacman \
-                   xbps-query
-do
-    [ -x "$(command -v "$SYS_MANAGER")" ] && PKG_MANAGER="${PKG_MANAGER} ${SYS_MANAGER}"
-done
-
-for MANAGER in ${PKG_MANAGER#\ }; do
-
-    case "$MANAGER" in
-        apt       ) GET_PKGS='/var/lib/dpkg/info/*.list'
-        ;;
-        emerge    ) GET_PKGS='/var/db/pkg/*/*'
-        ;;
-        flatpak   ) GET_PKGS="$(flatpak --columns=app list)"
-        ;;
-        kiss      ) GET_PKGS='/var/db/kiss/installed/*'
-        ;;
-        pacman    ) GET_PKGS='/var/lib/pacman/local/[0-9a-z]*'
-        ;;
-        xbps-query) GET_PKGS='/var/db/xbps/.*'
-        ;;
-    esac
-
-    TOTAL_PKGS="$(($(set -- "${GET_PKGS}"; echo "${#}") - PKG_XCPT))"
-
-    case "$TOTAL_PKGS" in
-        0|1) TOTAL_PKGS='?'
-             MANAGER='Unknown'
-        ;;
-    esac
-
-    PKGS_INFO="${PKGS_INFO}${TOTAL_PKGS} (${MANAGER}), "
-
-done
-
-G_='' G="<span font_desc='${ROW_ICON_FONT}' weight='bold'>${G_}</span>   ${PKGS_INFO%,\ }"
-
 if [ -x "$(command -v xprop)" ]; then
 
     XPROP_NET_SUPPORTING_WM_CHECK="$(xprop -root -notype _NET_SUPPORTING_WM_CHECK)" \
