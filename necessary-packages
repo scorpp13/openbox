@@ -2,18 +2,18 @@
 # suggest to start with  minimal-desktop e.g. icewm
 # install these packages with 'zypper in' command
 	alacritty # install ueberzugpp to preview images
-    alsa-utils
+	alsa-utils
 # copy from https://github.com/jamielinux/bashmount to ~/.local/bin
 	bashmount
 	breeze6-style
-    brightnessctl
+	brightnessctl
 	btop
 	dunst
 	fastfetch
 	fish # zsh
 	flameshot
 	gcc
-    geany
+	geany
 	git-core
 	gobject-introspection-devel #! needed for waypaper
 # https://software.opensuse.org/download/package?package=gsimplecal&project=home%3AAndnoVember%3ALXQt
@@ -22,15 +22,15 @@
 	kitty # to preview images use built-in kitten icat, no need to install additional software
 	light-locker
 	lxappearance
-    lxpolkit
+	lxpolkit
 	mpv
 	NetworkManager-applet
 # https://github.com/trizen/obmenu-generator    
 	obmenu-generator #! install with dependencies
-    openbox
-    parcellite
+	openbox
+	parcellite
 	pasystray
-    pavucontrol
+	pavucontrol
 	perl-Gtk3 #! needed for obmenu-generator
 	perl-Data-Dump #! needed for obmenu-generator
 	perl-Linux-DesktopFile #! needed for obmenu-generator
@@ -40,7 +40,7 @@
 	python311-psutil
 	python311-pycairo-devel #! needed for waypaper
 	rofi
-    tint2
+	tint2
 	thunar
 	thunar-archive-plugin
 	qt6ct
@@ -49,10 +49,10 @@
 	xdg-desktop-portal-gtk
 	xdg-user-dirs-gtk
 	xdg-utils
-    xfce4-power-manager
-    xhost
-    xsettingsd
+	xfce4-power-manager
+	xhost
+	xsettingsd
 	vifm
-    w3m
+	w3m
 # pipx install waypaper	
 	waypaper #! first install dependencies
