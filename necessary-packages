@@ -1,58 +1,58 @@
 # necessary packages for openSUSE_Tumbleweed
 # suggest to start with  minimal-desktop e.g. icewm
 # install these packages with 'zypper in' command
-	alacritty # install ueberzugpp to preview images
-	alsa-utils
-# copy from https://github.com/jamielinux/bashmount to ~/.local/bin
+  alacritty # install ueberzugpp to preview images
+  alsa-utils
+	# copy from https://github.com/jamielinux/bashmount to ~/.local/bin
 	bashmount
-	breeze6-style
-	brightnessctl
-	btop
-	dunst
-	fastfetch
-	fish # zsh
-	flameshot
-	gcc
-	geany
-	git-core
-	gobject-introspection-devel #! needed for waypaper
-# https://software.opensuse.org/download/package?package=gsimplecal&project=home%3AAndnoVember%3ALXQt
+  breeze6-style
+  brightnessctl
+  btop
+  dunst
+  fastfetch
+  fish # zsh
+  flameshot
+  gcc
+  geany
+  git-core
+  gobject-introspection-devel #! needed for waypaper
+	# https://software.opensuse.org/download/package?package=gsimplecal&project=home%3AAndnoVember%3ALXQt
 	gsimplecal
-	gum
-	kitty # to preview images use built-in kitten icat, no need to install additional software
-	light-locker
-	lxappearance
-	lxpolkit
-	mpv
-	NetworkManager-applet
-# https://github.com/trizen/obmenu-generator    
+  gum
+  kitty # to preview images use built-in kitten icat, no need to install additional software
+  light-locker
+  lxappearance
+  lxpolkit
+  mpv
+  NetworkManager-applet
+	# https://github.com/trizen/obmenu-generator    
 	obmenu-generator #! install with dependencies
-	openbox
-	parcellite
-	pasystray
-	pavucontrol
-	perl-Gtk3 #! needed for obmenu-generator
-	perl-Data-Dump #! needed for obmenu-generator
-	perl-Linux-DesktopFile #! needed for obmenu-generator
-	perl-File-DesktopEntry #! needed for obmenu-generator
-	picom
-	pytnon311-pipx
-	python311-psutil
-	python311-pycairo-devel #! needed for waypaper
-	rofi
-	tint2
-	thunar
-	thunar-archive-plugin
-	qt6ct
-	udiskie
-	xarchiver
-	xdg-desktop-portal-gtk
-	xdg-user-dirs-gtk
-	xdg-utils
-	xfce4-power-manager
-	xhost
-	xsettingsd
-	vifm
-	w3m
-# pipx install waypaper	
+  openbox
+  parcellite
+  pasystray
+  pavucontrol
+  perl-Gtk3 #! needed for obmenu-generator
+  perl-Data-Dump #! needed for obmenu-generator
+  perl-Linux-DesktopFile #! needed for obmenu-generator
+  perl-File-DesktopEntry #! needed for obmenu-generator
+  picom
+  pytnon311-pipx
+  python311-psutil
+  python311-pycairo-devel #! needed for waypaper
+  rofi
+  tint2
+  thunar
+  thunar-archive-plugin
+  qt6ct
+  udiskie
+  xarchiver
+  xdg-desktop-portal-gtk
+  xdg-user-dirs-gtk
+  xdg-utils
+  xfce4-power-manager
+  xhost
+  xsettingsd
+  vifm
+  w3m
+	# pipx install waypaper	
 	waypaper #! first install dependencies
