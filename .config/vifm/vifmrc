@@ -8,12 +8,10 @@ source ~/.config/vifm/favicons.vifm
 " Command used to edit files in various contexts.  The default is vim.
 if executable('vim')
     set vicmd=vim
-elseif executable('nvim')
-    set vicmd=nvim
-elseif executable('helix')
-    set vicmd=hx
-elseif executable('micro')
-    set vicmd=micro
+elseif executable('nano')
+    set vicmd=nano
+elseif executable('jeany')
+    set vicmd=jeany
 elseif $EDITOR != ''
     echo 'Note: using `'.$EDITOR.'` as an editor'
     let &vicmd = $EDITOR
@@ -104,19 +102,17 @@ colorscheme luke
 " Bookmarks
 " ------------------------------------------------------------------------------
 
-mark b ~/.backup
-mark c ~/.config
-mark d ~/Downloads
-mark e /etc
+mark c ~/.config/
+mark d ~/Downloads/
 mark h ~/
-mark l ~/.local
-mark m /run/media/as
-mark p ~/Pictures
-mark s ~/Pictures/screenshots
+mark g ~/Documents/
+mark l ~/.local/
+mark m /run/media/as/
 mark r /
-mark u /usr
-mark v ~/Video
-mark w ~/.config/wallpapers
+mark s ~/Pictures/Screenshots/
+mark u /usr/
+mark v ~/Videos/
+mark w ~/Pictures/Wallpapers/
 
 " ------------------------------------------------------------------------------
 " Commands
@@ -182,8 +178,8 @@ filextype {*.avi,*.mp4,*.wmv,*.dat,*.3gp,*.ogv,*.mkv,*.mpg,*.mpeg,*.vob,
 
 " Web
 filextype {*.xhtml,*.html,*.htm},<text/html>
-	\ {Open with vivaldi}
-	\ vivaldi %f &
+	\ {Open with firefox}
+	\ firefox %f &
 
 " Object
 filetype {*.o},<application/x-object> nm %f | less
@@ -333,11 +329,11 @@ nnoremap S :sort<cr>
 nnoremap w :view<cr>
 vnoremap w :view<cr>gv
 
-" Open file in micro
-nnoremap o :!micro %f<cr>
+" Open file in nano
+nnoremap o :!nano %f<cr>
 
-" Open file in mousepad
-nnoremap e :!mousepad %f<cr>
+" Open file in geany
+nnoremap e :!geany %f<cr>
 
 " Open file in the background using its default program
 nnoremap gb :file &<cr>l
@@ -386,10 +382,12 @@ nnoremap + <C-w>5>
 " nnoremap A cW
 
 " Open console in current directory
-if $DISPLAY && executable('xterm')
+if executable('alacritty')
+    nnoremap ,t :!alacritty &<cr>
+elseif executable('xterm')
     nnoremap ,t :!xterm &<cr>
-elseif $TERMINAL
-    nnoremap ,t :!$TERMINAL &<cr>
+elseif $TERM
+    nnoremap ,t :!$TERM &<cr>
 endif
 
 " Open editor to edit vifmrc and apply settings after returning to vifm

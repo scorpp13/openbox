@@ -2,9 +2,7 @@ Xcursor.theme: phinger-cursors-light
 
 ! Xterm settings
 XTerm*renderFont: true
-XTerm*faceName: xft: Iosevka Nerd Font, \
-                xft: Unifont:size=12, \
-                xft: Luxi Mono:style=Medium:size=12   
+XTerm*faceName: Source Code Pro
 XTerm*faceSize: 11
 XTerm.vt100.translations: #override \
     Ctrl <Key> minus: smaller-vt-font() \n\
