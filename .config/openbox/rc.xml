@@ -55,7 +55,7 @@
     <font place="ActiveWindow">
       <name>Cantarell</name>
       <!-- Font size in points. -->
-      <size>12</size>
+      <size>11</size>
       <!-- 'bold' or 'normal'. -->
       <weight>Normal</weight>
       <!-- 'italic' or 'normal'. -->
@@ -64,7 +64,7 @@
     <font place="InactiveWindow">
       <name>Cantarell</name>
       <!-- Font size in points. -->
-      <size>12</size>
+      <size>11</size>
       <!-- 'bold' or 'normal'. -->
       <weight>Normal</weight>
       <!-- 'italic' or 'normal'. -->
@@ -73,7 +73,7 @@
     <font place="MenuHeader">
       <name>Cantarell</name>
       <!-- Font size in points. -->
-      <size>12</size>
+      <size>11</size>
       <!-- 'bold' or 'normal'. -->
       <weight>Bold</weight>
       <!-- 'italic' or 'normal'. -->
@@ -145,10 +145,10 @@
        or when they are initially placed. Many programs reserve space automatically,
        but you can use this in other cases. -->
   <margins>
-    <top>5</top>
-    <bottom>5</bottom>
-    <left>50</left>
-    <right>5</right>
+    <top>3</top>
+    <bottom>3</bottom>
+    <left>48</left>
+    <right>3</right>
   </margins>
   <dock>
     <!-- (Top|Bottom)(Left|Right|)|Top|Bottom|Left|Right|Floating -->
@@ -277,7 +277,7 @@
         <menu>client-menu</menu>
       </action>
     </keybind>
-    <keybind key="W-q">
+    <keybind key="W-Escape">
       <action name="Close"/>
     </keybind>
     <keybind key="W-d">
