@@ -6,9 +6,9 @@ Light version of openSUSE_Tumbleweed with openbox onboard
 
 - [ ] Clone git-repo or download and extract it to your $HOME
 - `git clone https://gitlab.com/scorpp13/openbox.git`
-- [ ] Change to qtile directory
+- [ ] Change to openbox directory
 - `cd $HOME/openbox/`
-- [ ] Copy folders and files from it to your $HOME
+- [ ] Copy files and folders from it to your $HOME
 - `cp -r .config .icons .local .themes .vim Pictures .alias .bashrc .dmrc .vimrc $HOME`
 - [ ] Install necessary software from list
 - `sudo zypper install ...`
