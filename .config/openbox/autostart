@@ -1,5 +1,4 @@
 picom --daemon &
-lxpolkit &
 light-locker &
 dunst &
 $HOME/.fehbg &

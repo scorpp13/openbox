@@ -25,7 +25,6 @@ gum
 kitty                   # to preview images use built-in kitten icat
 light-locker
 lxappearance
-lxpolkit
 mpv
 NetworkManager-applet
   # https://github.com/trizen/obmenu-generator    
