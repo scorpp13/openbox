@@ -1,6 +1,8 @@
+<img width="600px" src="https://i.ibb.co/gdr0m1v/2025-01-18-14-32.png"/img>
+
 # My config files for Openbox
 
-Light version of openSUSE_Tumbleweed with openbox onboard
+Liteweight openSUSE_Tumbleweed with openbox onboard
 
 ## Installation
 
