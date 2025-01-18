@@ -2,7 +2,7 @@
 
 # My config files for Openbox
 
-Liteweight openSUSE_Tumbleweed with openbox onboard
+Lightweight openSUSE_Tumbleweed with openbox onboard
 
 ## Installation
 
