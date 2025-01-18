@@ -1,4 +1,4 @@
-<img src="https://i.ibb.co/kmVMCBM/merge-180125-160336.png" width="600"/>
+<img src="https://i.ibb.co/kmVMCBM/merge-180125-160336.png" width="400"/>
 
 # My config files for Openbox
 
