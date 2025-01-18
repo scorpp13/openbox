@@ -1,4 +1,6 @@
+<picture>
 <img width="600px" src="https://i.ibb.co/gdr0m1v/2025-01-18-14-32.png"/>
+</picture>
 
 # My config files for Openbox
 
