@@ -11,11 +11,11 @@ esac
 ROW_ICON_FONT='feather 12'
 MSG_ICON_FONT='feather 48'
 
-B_='' B="<span font_desc='${ROW_ICON_FONT}' weight='bold'>${B_}</span>   Increase ${AUDIO_VOLUME_STEPS}%"
-C_='' C="<span font_desc='${ROW_ICON_FONT}' weight='bold'>${C_}</span>   Decrease ${AUDIO_VOLUME_STEPS}%"
+B_='' B="<span font_desc='${ROW_ICON_FONT}' weight='bold'>${B_}</span>   Louder ${AUDIO_VOLUME_STEPS} +5%"
+C_='' C="<span font_desc='${ROW_ICON_FONT}' weight='bold'>${C_}</span>   Quieter ${AUDIO_VOLUME_STEPS} -5%"
 D_='' D="<span font_desc='${ROW_ICON_FONT}' weight='bold'>${D_}</span>   Toggle mute"
-F_='' F="<span font_desc='${ROW_ICON_FONT}' weight='bold'>${F_}</span>   Brighten ${BRIGHTNESS_STEPS}%"
-G_='' G="<span font_desc='${ROW_ICON_FONT}' weight='bold'>${G_}</span>   Dim ${BRIGHTNESS_STEPS}%"
+F_='' F="<span font_desc='${ROW_ICON_FONT}' weight='bold'>${F_}</span>   Brighter ${BRIGHTNESS_STEPS} +15%"
+G_='' G="<span font_desc='${ROW_ICON_FONT}' weight='bold'>${G_}</span>   Dimmer ${BRIGHTNESS_STEPS} -15%"
 
 case "${@}" in
     "$B") amixer ${AUDIO_DEVICE:+-D "$AUDIO_DEVICE"} sset Master "${AUDIO_VOLUME_STEPS:-5}%+" on -q
@@ -24,9 +24,9 @@ case "${@}" in
     ;;
     "$D") amixer ${AUDIO_DEVICE:+-D "$AUDIO_DEVICE"} sset Master 1+ toggle -q
     ;;
-    "$F") brightnessctl ${BRIGHTNESS_DEVICE:+-d "$BRIGHTNESS_DEVICE"} set "${BRIGHTNESS_STEPS:-5}%+" -q
+    "$F") brightnessctl ${BRIGHTNESS_DEVICE:+-d "$BRIGHTNESS_DEVICE"} set "${BRIGHTNESS_STEPS:-15}%+" -q
     ;;
-    "$G") brightnessctl ${BRIGHTNESS_DEVICE:+-d "$BRIGHTNESS_DEVICE"} set "${BRIGHTNESS_STEPS:-5}%-" -q
+    "$G") brightnessctl ${BRIGHTNESS_DEVICE:+-d "$BRIGHTNESS_DEVICE"} set "${BRIGHTNESS_STEPS:-15}%-" -q
     ;;
 esac
 
@@ -35,7 +35,9 @@ AUDIO_MUTED="${AUDIO_VOLUME##*\ \[on\]}"
 AUDIO_VOLUME="${AUDIO_VOLUME#*\ \[}" \
 AUDIO_VOLUME="${AUDIO_VOLUME%%\%\]\ *}"
 
-BRIGHTNESS="$(brightnessctl ${BRIGHTNESS_DEVICE:+-d "$BRIGHTNESS_DEVICE"} get -P)"
+BRIGHTNESS="$(brightnessctl ${BRIGHTNESS_DEVICE:+-d "$BRIGHTNESS_DEVICE"} i)"
+BRIGHTNESS="${BRIGHTNESS#*\ \(}" \
+BRIGHTNESS="${BRIGHTNESS%%\%)*}"
 
 if [ "$AUDIO_VOLUME" -eq 0 -o -n "$AUDIO_MUTED" ]; then
     [ -z "$AUDIO_MUTED" ] || MUTED='---'
@@ -48,8 +50,18 @@ else
     A_=''
 fi
 
+if [ "$BRIGHTNESS" -eq 0 ]; then
+    E_=''
+elif [ "$BRIGHTNESS" -lt 30 ]; then
+    E_=''
+elif [ "$BRIGHTNESS" -lt 80 ]; then
+    E_=''
+else
+    E_=''
+fi
+
 A="<span font_desc='${ROW_ICON_FONT}' weight='bold'>${A_}</span>   ${MUTED-${AUDIO_VOLUME}}"
-E_='' E="<span font_desc='${ROW_ICON_FONT}' weight='bold'>${E_}</span>   ${BRIGHTNESS}"
+E="<span font_desc='${ROW_ICON_FONT}' weight='bold'>${E_}</span>   ${BRIGHTNESS}"
 
 MESSAGE="<span font_desc='${MSG_ICON_FONT}' weight='bold'></span>"
 
