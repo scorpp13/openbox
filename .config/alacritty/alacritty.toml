@@ -34,7 +34,7 @@ import = [
 #	"~/.config/alacritty/theme/autumn.toml",
 #	"~/.config/alacritty/theme/ayu_dark.toml",
 #	"~/.config/alacritty/theme/ayu_light.toml",
-#	"~/.config/alacritty/theme/dracula_plus.toml",
+	"~/.config/alacritty/theme/dracula_plus.toml",
 #	"~/.config/alacritty/theme/everforest_dark.toml",
 #	"~/.config/alacritty/theme/gruvbox_light.toml",
 #	"~/.config/alacritty/theme/gruvbox_material.toml",
@@ -45,7 +45,7 @@ import = [
 #	"~/.config/alacritty/theme/papercolor_light.toml",
 #	"~/.config/alacritty/theme/papertheme.toml",
 #	"~/.config/alacritty/theme/pastel_dark.toml",
-	"~/.config/alacritty/theme/taerminal.toml",
+#	"~/.config/alacritty/theme/taerminal.toml",
 #	"~/.config/alacritty/theme/wombat.toml",
 ]
 

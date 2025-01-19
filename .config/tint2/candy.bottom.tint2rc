@@ -264,7 +264,7 @@ ac_disconnected_cmd =
 # Button 1
 #      
 button = new
-button_text = 
+button_text = 
 button_tooltip = Apps / Scripts
 button_lclick_command = ~/.config/rofi/scripts/rofi-main.sh
 button_rclick_command = ~/.config/rofi/scripts/rofi-exts.sh scripts
