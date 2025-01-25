@@ -1,7 +1,7 @@
 alias update='sudo zypper up'
 alias upgrade='sudo zypper dup'
 alias verify='sudo zypper ve'
-alias refresh'sudo zypper ref'
+alias refresh='sudo zypper ref'
 alias cclean='sudo zypper cc'
 alias unneed='sudo zypper pa --unneeded'
 alias fupdate='flatpak update'
