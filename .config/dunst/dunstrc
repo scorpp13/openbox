@@ -15,13 +15,13 @@ progress_bar_frame_width = 0
 transparency = 3
 horizontal_padding = 11
 frame_width = 6
-frame_color = "#3C3836"
-separator_color = "#504945"
+frame_color = "#32302F"
+separator_color = "#665C54"
 idle_threshold = 120
 
 font = "mplus Nerd Font 10"
 
-format = "<span size='x-large' font_desc='Cantarell,mplus Nerd Font 9' weight='bold' foreground='#f9f9f9'>%s</span>\n%b"
+format = "<span size='x-large' font_desc='Cantarell,mplus Nerd Font 9' weight='bold' foreground='#F9F5D7'>%s</span>\n%b"
 
 show_age_threshold = 60
 icon_position = left
@@ -45,21 +45,21 @@ always_run_script = true
 
 [urgency_low]
 timeout = 3
-background = "#3C3836"
+background = "#32302F"
 foreground = "#FBF1C7"
-highlight = "#D3869B"
+highlight = "#8EC07C"
 
 [urgency_normal]
 timeout = 6
-background = "#3C3836"
+background = "#32302F"
 foreground = "#FBF1C7"
-highlight = "#D3869B"
+highlight = "#8EC07C"
 
 [urgency_critical]
 timeout = 0
-background = "#3C3836"
+background = "#32302F"
 foreground = "#FBF1C7"
-highlight = "#D3869B"
+highlight = "#8EC07C"
 
 [obox_desktop]
 appname = "obox_desktop"

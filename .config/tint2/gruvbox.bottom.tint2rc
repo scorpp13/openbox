@@ -5,13 +5,13 @@
 # Gradients
 # Gradient 1
 gradient = vertical
-start_color = #fff400 100
-end_color = #ffb500 100
+start_color = #83A598 100
+end_color = #458588 100
 
 # Gradient 2
 gradient = vertical
-start_color = #fff400 82
-end_color = #ffb500 82
+start_color = #83A598 82
+end_color = #458588 82
 
 #-------------------------------------
 # Backgrounds
@@ -76,13 +76,13 @@ border_sides =
 border_content_tint_weight = 0
 background_content_tint_weight = 0
 background_color = #FBF1C7 0
-border_color = #83A598 0
+border_color = #458588 0
 gradient_id = 1
-background_color_hover = #458588 0
-border_color_hover = #83A598 0
+background_color_hover = #83A598 0
+border_color_hover = #458588 0
 gradient_id_hover = 2
-background_color_pressed = #458588 0
-border_color_pressed = #83A598 0
+background_color_pressed = #83A598 0
+border_color_pressed = #458588 0
 gradient_id_pressed = 1
 
 # Background 6: 
