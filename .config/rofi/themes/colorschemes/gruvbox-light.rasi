@@ -1,0 +1,14 @@
+* {
+  accent1:          #076678;
+  accent2:          #458588;
+  button-gradient:  linear-gradient(90, #076678, #458588);
+  background-alpha: #EBDBB2f7;
+  background:       #EBDBB2;
+  background-light: #F2E5BC;
+  background-focus: #F9F5D7;
+  foreground:       #3C3836;
+  foreground-list:  #3C3836;
+  on:               #689D6A;
+  off:              #CC241D;
+  urgent:           #D65D0E;
+}
