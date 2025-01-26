@@ -25,10 +25,10 @@ format = "<span size='x-large' font_desc='Cantarell,mplus Nerd Font 9' weight='b
 
 show_age_threshold = 60
 icon_position = left
-min_icon_size = 48
-max_icon_size = 96
+min_icon_size = 32
+max_icon_size = 32
 enable_recursive_icon_lookup = true
-icon_theme = "Papirus-Dark-Custom"
+icon_theme = "Stylish-Dark"
 
 dmenu = "rofi -theme-str '@import "action.rasi"' -no-show-icons -no-lazy-grab -no-plugins -dmenu -mesg 'Context Menu'"
 

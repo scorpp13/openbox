@@ -1,0 +1,26 @@
+<svg width="256" height="256" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <linearGradient id="b" x1=".5002" x2=".5002" y2="1" gradientTransform="matrix(244,0,0,228,5.981,12)" gradientUnits="userSpaceOnUse">
+    <stop stop-color="#ebdbb2" offset="0"/>
+    <stop stop-color="#ebdbb2" offset="1"/>
+  </linearGradient>
+  <defs>
+    <linearGradient id="linearGradient31" x1=".5002" x2=".5002" y2="1" gradientTransform="matrix(244,0,0,228,5.988,12)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#282828" stop-opacity=".1" offset="0"/>
+      <stop stop-color="#bdae93" stop-opacity=".1" offset=".1"/>
+      <stop stop-color="#d5c4a1" stop-opacity="0" offset=".7022"/>
+      <stop stop-color="#bdae93" stop-opacity=".302" offset=".9"/>
+      <stop stop-color="#282828" stop-opacity=".3" offset="1"/>
+    </linearGradient>
+  </defs>
+  <path d="m165 12c72 0 85 15 85 87v56c0 70-13 85-85 85h-74c-72 0-85-15-85-85v-56c0-72 13-87 85-87z" fill="url(#b)" style="isolation:isolate"/>
+  <g transform="translate(.00022699 2)" stroke-width="1.0826" style="isolation:isolate">
+    <path d="m68.253 122.82v35.526l59.741 46.98 59.741-46.98-0.58029-35.526-59.16 42.485z" fill="#928374" style="isolation:isolate"/>
+    <path d="m107.26 122.82 19.866-16.24 20.735 16.24-2.5376 2.1024-18.198-15.007-17.691 14.354z" fill="#928374" style="isolation:isolate"/>
+    <path d="m109.43 121.37 17.691-14.355 0.86933-58.436-56.115 44.371z" fill="#928374"/>
+    <path d="m146.12 122.53-18.994-15.515 0.86933-57.276 55.681 44.371z" fill="#a89984"/>
+    <path d="m68.253 92.948v61.48l59.741 46.981v-61.48z" fill="#a89984"/>
+    <path d="m187.73 92.948-0.58029 61.48-59.16 46.981v-61.48z" fill="#928374"/>
+    <path d="m68.253 92.948 60.611-47.85q59.741 47.27 58.87 47.85-0.86934 0.58028-59.741 46.981zm7.1052 0 52.636 42.051 52.926-42.051q-51.186-42.314-52.926-41.893-1.7398 0.42222-52.636 41.893z" fill="#bdae93" fill-rule="evenodd"/>
+  </g>
+  <path d="m91 12c-72 0-85 15-85 87v56c0 70 13 85 85 85h74c72 0 85-15 85-85v-56c0-72-13-87-85-87zm0 4h74c68 0 80 15 80 83v56c0 66-12 81-80 81h-74c-68 0-80-15-80-81v-56c0-68 12-83 80-83z" fill="url(#linearGradient31)" style="isolation:isolate"/>
+</svg>
