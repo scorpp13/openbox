@@ -1,4 +1,4 @@
-# joy dunst theme
+# avokado dunst theme
 
 [global]
 follow = mouse
@@ -15,20 +15,20 @@ progress_bar_frame_width = 0
 transparency = 3
 horizontal_padding = 11
 frame_width = 6
-frame_color = "#32302F"
-separator_color = "#665C54"
+frame_color = "#374d46"
+separator_color = "#384f47"
 idle_threshold = 120
 
 font = "mplus Nerd Font 10"
 
-format = "<span size='x-large' font_desc='Cantarell,mplus Nerd Font 9' weight='bold' foreground='#F9F5D7'>%s</span>\n%b"
+format = "<span size='x-large' font_desc='Cantarell,mplus Nerd Font 9' weight='bold' foreground='#f9f9f9'>%s</span>\n%b"
 
 show_age_threshold = 60
 icon_position = left
-min_icon_size = 48
-max_icon_size = 48
+min_icon_size = 32
+max_icon_size = 32
 enable_recursive_icon_lookup = true
-icon_theme = "Gruvbox-Plus-Dark"
+icon_theme = "Stylish-Dark"
 
 dmenu = "rofi -theme-str '@import "action.rasi"' -no-show-icons -no-lazy-grab -no-plugins -dmenu -mesg 'Context Menu'"
 
@@ -45,21 +45,21 @@ always_run_script = true
 
 [urgency_low]
 timeout = 3
-background = "#32302F"
-foreground = "#FBF1C7"
-highlight = "#8EC07C"
+background = "#374d46"
+foreground = "#f9f9f9"
+highlight = "#9AD4AA"
 
 [urgency_normal]
 timeout = 6
-background = "#32302F"
-foreground = "#FBF1C7"
-highlight = "#8EC07C"
+background = "#374d46"
+foreground = "#f9f9f9"
+highlight = "#9AD4AA"
 
 [urgency_critical]
 timeout = 0
-background = "#32302F"
-foreground = "#FBF1C7"
-highlight = "#8EC07C"
+background = "#374d46"
+foreground = "#f9f9f9"
+highlight = "#9AD4AA"
 
 [obox_desktop]
 appname = "obox_desktop"

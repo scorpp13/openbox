@@ -120,11 +120,11 @@ border_sides =
 border_content_tint_weight = 0
 background_content_tint_weight = 0
 background_color = #EBDBB2 100
-border_color = #A89984 0
+border_color = #F9F5D7 0
 background_color_hover = #EBDBB2 100
-border_color_hover = #A89984 0
+border_color_hover = #F9F5D7 0
 background_color_pressed = #EBDBB2 100
-border_color_pressed = #A89984 0
+border_color_pressed = #F9F5D7 0
 
 #-------------------------------------
 # Panel
@@ -145,7 +145,7 @@ autohide_show_timeout = 0
 autohide_hide_timeout = 0
 autohide_height = 1
 strut_policy = follow_size
-panel_window_name = gruvbox-light.tint2
+panel_window_name = groove.tint2
 disable_transparency = 1
 mouse_effects = 1
 font_shadow = 0
@@ -170,8 +170,8 @@ taskbar_name_padding = 1 0
 taskbar_name_background_id = 3
 taskbar_name_active_background_id = 3
 taskbar_name_font = Iosevka 8.3
-taskbar_name_font_color = #F9F5D7 100
-taskbar_name_active_font_color = #F9F5D7 100
+taskbar_name_font_color = #FBF1C7 100
+taskbar_name_active_font_color = #FBF1C7 100
 taskbar_distribute_size = 0
 taskbar_sort_order = title
 task_align = right
