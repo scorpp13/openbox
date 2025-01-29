@@ -52,7 +52,7 @@ case "${@}" in
     ;;
 esac
 
-MESSAGE=" $(date +%H %M) "
+MESSAGE=" $(date +%d.%m) "
 
 printf '%b\n' '\0use-hot-keys\037true' '\0markup-rows\037true' "\0message\037${MESSAGE}" \
               "$A" "$B" "$C" "$D" "$E" "$F"

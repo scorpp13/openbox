@@ -4,7 +4,7 @@
   button-gradient:  linear-gradient(90, #076678, #458588);
   background-alpha: #EBDBB2f7;
   background:       #EBDBB2;
-  background-light: #F2E5BC;
+  background-light: #EBDBB2;
   background-focus: #F9F5D7;
   foreground:       #3C3836;
   foreground-list:  #3C3836;
