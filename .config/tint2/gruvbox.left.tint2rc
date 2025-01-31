@@ -21,12 +21,12 @@ border_width = 0
 border_sides = 
 border_content_tint_weight = 0
 background_content_tint_weight = 0
-background_color = #FBF1C7 100
-border_color = #FBF1C7 100
-background_color_hover = #FBF1C7 78
-border_color_hover = #FBF1C7 78
-background_color_pressed = #FBF1C7 100
-border_color_pressed = #FBF1C7 100
+background_color = #EBDBB2 100
+border_color = #EBDBB2 40
+background_color_hover = #FBF1C7 100
+border_color_hover = #FBF1C7 40
+background_color_pressed = #F9F5D7 100
+border_color_pressed = #F9F5D7 100
 
 # Background 2: Задача по умолчанию
 rounded = 8
@@ -34,13 +34,13 @@ border_width = 0
 border_sides = 
 border_content_tint_weight = 0
 background_content_tint_weight = 0
-background_color = #665C54 100
-border_color = #665C54 100
+background_color = #7C6F64 100
+border_color = #7C6F64 40
 gradient_id = 0
-background_color_hover = #EBDBB2 82
-border_color_hover = #EBDBB2 82
-background_color_pressed = #665C54 100
-border_color_pressed = #665C54 100
+background_color_hover = #FBF1C7 100
+border_color_hover = #FBF1C7 40
+background_color_pressed = #F9F5D7 100
+border_color_pressed = #F9F5D7 100
 
 # Background 3: Имя активного рабочего стола, Имя неактивного рабочего стола, Неотложная задача
 rounded = 8
@@ -51,10 +51,10 @@ background_content_tint_weight = 0
 background_color = #FBF1C7 100
 border_color = #FBF1C7 40
 gradient_id = 0
-background_color_hover = #FBF1C7 88
-border_color_hover = #FBF1C7 40
-background_color_pressed = #FBF1C7 100
-border_color_pressed = #FBF1C7 78
+background_color_hover = #F9F5D7 100
+border_color_hover = #F9F5D7 40
+background_color_pressed = #F9F5D7 100
+border_color_pressed = #F9F5D7 100
 
 # Background 4: Активная панель задач, Неактивная панель задач, Панель, Часы
 rounded = 0
@@ -119,12 +119,12 @@ border_width = 0
 border_sides = 
 border_content_tint_weight = 0
 background_content_tint_weight = 0
-background_color = #665C54 100
-border_color = #A89984 0
-background_color_hover = #665C54 100
-border_color_hover = #A89984 0
-background_color_pressed = #665C54 100
-border_color_pressed = #A89984 0
+background_color = #504945 100
+border_color = #504945 0
+background_color_hover = #504945 100
+border_color_hover = #504945 0
+background_color_pressed = #504945 100
+border_color_pressed = #504945 0
 
 #-------------------------------------
 # Panel
