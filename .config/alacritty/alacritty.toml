@@ -37,17 +37,18 @@ import = [
 #	"~/.config/alacritty/theme/dracula_plus.toml",
 #	"~/.config/alacritty/theme/everforest_dark.toml",
 #	"~/.config/alacritty/theme/gruvbox_light.toml",
-	"~/.config/alacritty/theme/gruvbox_material.toml",
+#	"~/.config/alacritty/theme/gruvbox_material.toml",
 #	"~/.config/alacritty/theme/hardhacker.toml",
 #	"~/.config/alacritty/theme/material_theme.toml",
 #	"~/.config/alacritty/theme/noctis_lux.toml",
 #	"~/.config/alacritty/theme/nordic.toml",
 #	"~/.config/alacritty/theme/papercolor_light.toml",
 #	"~/.config/alacritty/theme/papertheme.toml",
-#	"~/.config/alacritty/theme/pastel_dark.toml",
+	"~/.config/alacritty/theme/pastel_dark.toml",
 #	"~/.config/alacritty/theme/taerminal.toml",
 #	"~/.config/alacritty/theme/wombat.toml",
 ]
 
 [font]
-size = 11
+normal = { family = "Nimbus Mono L", style = "Regular" }
+size = 12

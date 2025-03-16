@@ -128,7 +128,7 @@ border_color_pressed = #a1a8b9 0
 
 #-------------------------------------
 # Panel
-panel_items = PPPPPPPPTSC
+panel_items = PPPPPPPPETSC
 panel_size = 100% 45
 panel_margin = 0 0
 panel_padding = 7 7 7
@@ -406,3 +406,25 @@ tooltip_padding = 8 6
 tooltip_background_id = 7
 tooltip_font_color = #f9f9f9 100
 tooltip_font = Cantarell 11
+
+#-------------------------------------
+# Executor 1
+execp = new
+execp_command = updates.sh
+execp_interval = 3600
+execp_has_icon = 1
+execp_cache_icon = 0
+execp_continuous = 0
+execp_markup = 0
+execp_tooltip = 
+execp_lclick_command = alacritty -e installupdates.sh
+execp_rclick_command = 
+execp_mclick_command = 
+execp_uwheel_command = 
+execp_dwheel_command = 
+execp_font_color = #f8e6e6 100
+execp_padding = 0 0
+execp_background_id = 0
+execp_centered = 1
+execp_icon_w = 26
+execp_icon_h = 26
