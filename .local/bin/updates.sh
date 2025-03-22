@@ -1,9 +1,8 @@
 #!/usr/bin/bash   
-#sudo zypper ref --non-interactive
 threshhold_zero=0
 icon=$HOME/.local/bin/suse_logo.svg
-updates=$(zypper lu -a | grep -Fe update -e install | wc -l)
+updates=$(zypper lu | grep v | wc -l)
 if [ "$updates" -gt $threshhold_zero ]; then
     echo "$icon"
-    dunstify --raw_icon=$HOME/.local/bin/suse_logo.svg "Updates available" "<b>$updates</b>" --timeout=0
+    dunstify --raw_icon=$HOME/.local/bin/suse_logo.svg "Updates available" "<b>$updates</b>"
 fi
