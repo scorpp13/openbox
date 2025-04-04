@@ -1,0 +1,10 @@
+[Unit]
+Description="Run zypper refresh"
+
+[Timer]
+OnBootSec=1
+OnUnitActiveSec=6h
+Unit=refresh.service
+
+[Install]
+WantedBy=multi-user.target
