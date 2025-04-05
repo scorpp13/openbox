@@ -1,8 +1,8 @@
 [Unit]
-Description="Run zypper refresh"
+Description="Run refresh.service"
 
 [Timer]
-OnBootSec=1
+OnBootSec=5
 OnUnitActiveSec=6h
 Unit=refresh.service
 

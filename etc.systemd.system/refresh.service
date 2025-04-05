@@ -1,0 +1,10 @@
+[Unit]
+Description="Zypper Refresh"
+After=network-online.target
+Wants=network-online.target
+StopWhenUnneeded=yes
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+ExecStart=/usr/bin/zypper ref

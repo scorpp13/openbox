@@ -1,6 +1,0 @@
-[Unit]
-Description="Zypper Refresh"
-After=network.target
-
-[Service]
-ExecStart=/usr/bin/zypper ref
