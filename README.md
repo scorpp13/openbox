@@ -14,6 +14,10 @@ Lightweight openSUSE_Tumbleweed with openbox onboard
 - `cp -r .config .icons .local .themes .vim Pictures .alias .bashrc .dmrc .vimrc $HOME`
 - [ ] Install necessary software from list
 - `sudo zypper install ...`
+- [ ] Copy custom_unit files to systemd folder
+- `cd $HOME/openbox/systemd & sudo cp refresh.service refresh.timer /etc/systemd/system`
+- [ ] Enable custom_unit_timer
+- `sudo systemctl enable refresh.timer`
 - [ ] Reboot your machine
 - `sudo reboot`
 - <!> Authorization required, but no authorization protocol specified
