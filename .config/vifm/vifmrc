@@ -191,7 +191,8 @@ fileviewer {*.[1-8]},<text/troff> man ./%c | col -b
 " Images
 filextype {*.bmp,*.jpg,*.jpeg,*.png,*.gif,*.xpm},<image/*>
 	\ {View in feh}
-	\ feh -FZ %d --start-at %d/%c 2>/dev/null
+"	\ feh -FZ %d --start-at %d/%c 2>/dev/null
+	\ nomacs %f &
 
 " MD5
 filetype *.md5
