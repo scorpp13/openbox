@@ -1,5 +1,4 @@
 #!/usr/bin/bash
-zypper ref &
 threshhold_zero=0
 icon=$HOME/.local/bin/suse_logo.svg
 updates=$(zypper lu -a | grep v | wc -l)
