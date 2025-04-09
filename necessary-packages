@@ -33,6 +33,7 @@ openbox
 parcellite
 pasystray
 pavucontrol
+peazip                  #! copy peazip.tap to /usr/libexec/thunar-archive-plugin
 perl-Gtk3               #! needed for obmenu-generator
 perl-Data-Dump          #! needed for obmenu-generator
 perl-Linux-DesktopFile  #! needed for obmenu-generator
@@ -47,7 +48,6 @@ thunar
 thunar-archive-plugin
 qt6ct
 udiskie
-xarchiver
 xdg-desktop-portal-gtk
 xdg-user-dirs-gtk
 xdg-utils
