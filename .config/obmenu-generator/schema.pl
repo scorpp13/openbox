@@ -33,7 +33,7 @@ our $SCHEMA = [
     {sep => 'ИЗБРАННОЕ'},
 
     #          COMMAND              LABEL          ICON
-    {item => ['xdg-open .',        'Файлы',       'system-file-manager']},
+    {item => ['thunar',            'Файлы',       'system-file-manager']},
     {item => ['kitty -e vifm',     'Vifm',        'system-file-manager']},
     {item => ['kitty',             'Терминал',    'utilities-terminal']},
     {item => ['xdg-open http://',  'Браузер',     'web-browser']},

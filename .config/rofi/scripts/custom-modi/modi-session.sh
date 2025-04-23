@@ -30,7 +30,7 @@ prompt()
     PROMPT="<span font_desc='${MSG_ICON_FONT}' weight='bold'>${1}</span>"
 
     printf '%b\n' "\0message\037${PROMPT}" \
-                  "${Y}\0info\037#${2}" "$N" "${Z}\0info\037#${2} --firmware-setup"
+                  "${Y}\0info\037#${2}" "$N" "${Z}\0info\037#${2}"
 
     exit ${?}
 }
@@ -40,7 +40,7 @@ case "${@}" in
     ;;
     "$B"     ) prompt "$B_" "${SYSTEMCTL:-loginctl} --no-ask-password reboot"
     ;;
-    "$C"     ) eval 'exec loginctl --no-ask-password lock-session >&2'
+    "$C"     ) eval "exec loginctl --no-ask-password lock-session >&2"
     ;;
     "$D"     ) prompt "$D_" "${SYSTEMCTL:-loginctl} --no-ask-password suspend"
     ;;
@@ -48,7 +48,9 @@ case "${@}" in
     ;;
     "$F"     ) prompt "$F_" "loginctl --no-ask-password kill-user ${EUID:-$(id -u)} --signal=SIGKILL"
     ;;
-    "$Y"|"$Z") eval "exec ${ROFI_INFO#\#} >&2"
+    "$Z"     ) eval "exec systemctl reboot --firmware-setup >&2"
+    ;;
+    "$Y"     ) eval "exec ${ROFI_INFO#\#} >&2"
     ;;
 esac
 

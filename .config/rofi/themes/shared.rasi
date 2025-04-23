@@ -1,8 +1,8 @@
 // shared_config_file
 
 * {
-  text-font:                        "Comfortaa Bold 12";
-  icon-font:                        "Material 14";
+  text-font:                        "Comfortaa Bold 14";
+  icon-font:                        "Material 18";
   center-align:                     0.5;
   window-padding:                   15.4% 8%;
   button-padding:                   14px;

@@ -18,6 +18,8 @@ Lightweight openSUSE_Tumbleweed with openbox onboard
 - `cd $HOME/openbox/systemd & sudo cp refresh.service refresh.timer /etc/systemd/system`
 - [ ] Enable custom_unit_timer
 - `sudo systemctl enable refresh.timer`
+- [ ] Enable speakers of Infinix Inbook X2
+- `sudo cp es8336.conf /etc/modprobe.d`
 - [ ] Reboot your machine
 - `sudo reboot`
 - <!> Authorization required, but no authorization protocol specified

@@ -4,7 +4,6 @@ Suggest to start with  minimal-desktop e.g. icewm
 Install the packages with 'zypper in' command
 .
 <------------------------------------------------------------->
-alacritty               #! needed ueberzugpp to preview images
 alsa-utils
   # copy from https://github.com/jamielinux/bashmount to ~/.local/bin
   bashmount
@@ -15,6 +14,7 @@ dunst
 fastfetch
 fish                    # zsh (any shell you wish)
 flameshot
+font-manager
 gcc
 geany
 git-core
@@ -43,16 +43,17 @@ pytnon311-pipx
 python311-psutil
 python311-pycairo-devel #! needed for waypaper
 rofi
+seahorse
 tint2
 thunar
 thunar-archive-plugin
+qt5ct
 qt6ct
 udiskie
 xdg-desktop-portal-gtk
 xdg-user-dirs-gtk
 xdg-utils
 xfce4-power-manager
-xhost
 xsettingsd
 vifm
 w3m

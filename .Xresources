@@ -3,7 +3,7 @@ Xcursor.theme: phinger-cursors-light
 ! Xterm settings
 XTerm*renderFont: true
 XTerm*faceName: Source Code Pro
-XTerm*faceSize: 11
+XTerm*faceSize: 14
 XTerm.vt100.translations: #override \
     Ctrl <Key> minus: smaller-vt-font() \n\
     Ctrl <Key> plus: larger-vt-font() \n\

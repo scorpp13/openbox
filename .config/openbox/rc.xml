@@ -40,7 +40,7 @@
     <primaryMonitor>1</primaryMonitor>
   </placement>
   <theme>
-    <name>Gruvbox</name>
+    <name>Avokado</name>
     <!-- Available characters are NDSLIMC, each can occur at most once.
          N: window icon
          L: window label (AKA title)
@@ -55,7 +55,7 @@
     <font place="ActiveWindow">
       <name>Cantarell</name>
       <!-- Font size in points. -->
-      <size>11</size>
+      <size>13</size>
       <!-- 'bold' or 'normal'. -->
       <weight>Normal</weight>
       <!-- 'italic' or 'normal'. -->
@@ -64,7 +64,7 @@
     <font place="InactiveWindow">
       <name>Cantarell</name>
       <!-- Font size in points. -->
-      <size>11</size>
+      <size>13</size>
       <!-- 'bold' or 'normal'. -->
       <weight>Normal</weight>
       <!-- 'italic' or 'normal'. -->
@@ -73,7 +73,7 @@
     <font place="MenuHeader">
       <name>Cantarell</name>
       <!-- Font size in points. -->
-      <size>11</size>
+      <size>13</size>
       <!-- 'bold' or 'normal'. -->
       <weight>Bold</weight>
       <!-- 'italic' or 'normal'. -->
@@ -82,7 +82,7 @@
     <font place="MenuItem">
       <name>Cantarell</name>
       <!-- Font size in points. -->
-      <size>11</size>
+      <size>13</size>
       <!-- 'bold' or 'normal'. -->
       <weight>Normal</weight>
       <!-- 'italic' or 'normal'. -->
@@ -91,7 +91,7 @@
     <font place="ActiveOnScreenDisplay">
       <name>Cantarell</name>
       <!-- Font size in points. -->
-      <size>11</size>
+      <size>13</size>
       <!-- 'bold' or 'normal'. -->
       <weight>Normal</weight>
       <!-- 'italic' or 'normal'. -->
@@ -100,7 +100,7 @@
     <font place="InactiveOnScreenDisplay">
       <name>Cantarell</name>
       <!-- Font size in points. -->
-      <size>11</size>
+      <size>13</size>
       <!-- 'bold' or 'normal'. -->
       <weight>Normal</weight>
       <!-- 'italic' or 'normal'. -->
@@ -147,7 +147,7 @@
   <margins>
     <top>3</top>
     <bottom>3</bottom>
-    <left>48</left>
+    <left>53</left>
     <right>3</right>
   </margins>
   <dock>

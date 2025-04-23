@@ -10,5 +10,3 @@ export LESSHISTFILE='/dev/null'
 
 export QT_QPA_PLATFORMTHEME='qt5ct'
 export EDITOR='vim'
-export LANG='ru_RU.UTF-8'
-export G_SLICE='allways-malloc'
