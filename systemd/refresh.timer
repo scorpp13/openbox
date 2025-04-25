@@ -2,7 +2,7 @@
 Description="Run refresh.service"
 
 [Timer]
-OnBootSec=5
+OnBootSec=60
 OnUnitActiveSec=6h
 Unit=refresh.service
 

@@ -9,3 +9,5 @@ pasystray &
 nm-applet &
 xfce4-power-manager &
 udiskie -Ans &
+gio launch $HOME/.config/autostart/org.telegram.desktop.desktop &
+gio launch $HOME/.config/autostart/com.github.eneshecan.WhatsAppForLinux.desktop &

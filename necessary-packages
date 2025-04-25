@@ -44,6 +44,7 @@ python311-psutil
 python311-pycairo-devel #! needed for waypaper
 rofi
 seahorse
+telegram-desktop
 tint2
 thunar
 thunar-archive-plugin
@@ -59,5 +60,6 @@ vifm
 w3m
   # pipx install waypaper	
   waypaper              #! first install dependencies
+whatsapp-for-linux
 <---------------------------------------------------->
 .
