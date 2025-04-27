@@ -169,7 +169,7 @@ taskbar_always_show_all_desktop_tasks = 0
 taskbar_name_padding = 6 0
 taskbar_name_background_id = 3
 taskbar_name_active_background_id = 3
-taskbar_name_font = Cantarell Bold 11
+taskbar_name_font = Material Bold 12
 taskbar_name_font_color = #3C3836 100
 taskbar_name_active_font_color = #3C3836 100
 taskbar_distribute_size = 0
@@ -182,9 +182,9 @@ task_text = 0
 task_icon = 1
 task_centered = 1
 urgent_nb_of_blink = 3
-task_maximum_size = 20 20
-task_padding = 0 0 0
-task_font = Sans 0
+task_maximum_size = 22 22
+task_padding = 2 2 2
+task_font = Noto Sans 0
 task_tooltip = 1
 task_thumbnail = 1
 task_thumbnail_size = 300
@@ -224,7 +224,7 @@ launcher_tooltip = 0
 #-------------------------------------
 # Clock
 time1_format = %H:%M
-time1_font = Iosevka Bold 16
+time1_font = Material Bold 16
 time1_timezone = 
 clock_font_color = #FBF1C7 100
 clock_padding = 5 0
@@ -302,7 +302,7 @@ button_mclick_command =
 button_uwheel_command = 
 button_dwheel_command = 
 button_font = Material 19
-button_font_color = #f9f9f9 100
+button_font_color = #FBF1C7 100
 button_padding = 4 0
 button_background_id = 6
 button_centered = 1
@@ -383,7 +383,7 @@ tooltip_hide_timeout = 0.2
 tooltip_padding = 10 10
 tooltip_background_id = 7
 tooltip_font_color = #FBF1C7 100
-tooltip_font = Cantarell 13
+tooltip_font = Noto Sans 13
 
 #-------------------------------------
 # Executor 1

@@ -53,7 +53,7 @@
     <keepBorder>yes</keepBorder>
     <animateIconify>yes</animateIconify>
     <font place="ActiveWindow">
-      <name>Cantarell</name>
+      <name>Noto Sans</name>
       <!-- Font size in points. -->
       <size>13</size>
       <!-- 'bold' or 'normal'. -->
@@ -62,7 +62,7 @@
       <slant>Normal</slant>
     </font>
     <font place="InactiveWindow">
-      <name>Cantarell</name>
+      <name>Noto Sans</name>
       <!-- Font size in points. -->
       <size>13</size>
       <!-- 'bold' or 'normal'. -->
@@ -71,16 +71,16 @@
       <slant>Normal</slant>
     </font>
     <font place="MenuHeader">
-      <name>Cantarell</name>
+      <name>Noto Sans Semi-Bold</name>
       <!-- Font size in points. -->
       <size>13</size>
       <!-- 'bold' or 'normal'. -->
-      <weight>Bold</weight>
+      <weight>Normal</weight>
       <!-- 'italic' or 'normal'. -->
       <slant>Normal</slant>
     </font>
     <font place="MenuItem">
-      <name>Cantarell</name>
+      <name>Noto Sans</name>
       <!-- Font size in points. -->
       <size>13</size>
       <!-- 'bold' or 'normal'. -->
@@ -89,7 +89,7 @@
       <slant>Normal</slant>
     </font>
     <font place="ActiveOnScreenDisplay">
-      <name>Cantarell</name>
+      <name>Noto Sans</name>
       <!-- Font size in points. -->
       <size>13</size>
       <!-- 'bold' or 'normal'. -->
@@ -98,7 +98,7 @@
       <slant>Normal</slant>
     </font>
     <font place="InactiveOnScreenDisplay">
-      <name>Cantarell</name>
+      <name>Noto Sans</name>
       <!-- Font size in points. -->
       <size>13</size>
       <!-- 'bold' or 'normal'. -->
