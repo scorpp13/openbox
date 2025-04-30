@@ -128,7 +128,7 @@ border_color_pressed = #a1a8b9 0
 
 #-------------------------------------
 # Panel
-panel_items = PPPPPPPPETSC
+panel_items = PPPPPPPETSC
 panel_size = 100% 50
 panel_margin = 0 0
 panel_padding = 7 7 7
@@ -277,9 +277,9 @@ button_max_icon_size = 0
 # Button 3
 button = new
 button_text = 
-button_tooltip = Theme
+button_tooltip = Theme / Flameshot
 button_lclick_command = ~/.config/rofi/scripts/rofi-exts.sh theme
-button_rclick_command = 
+button_rclick_command = flameshot launcher
 button_mclick_command = 
 button_uwheel_command = 
 button_dwheel_command = 
@@ -344,23 +344,6 @@ button_max_icon_size = 0
 
 #-------------------------------------
 # Button 7
-button = new
-button_text = 
-button_tooltip = Screenshot
-button_lclick_command = flameshot launcher
-button_rclick_command = 
-button_mclick_command = 
-button_uwheel_command = 
-button_dwheel_command = 
-button_font = Material 19
-button_font_color = #f9f9f9 100
-button_padding = 4 0
-button_background_id = 6
-button_centered = 1
-button_max_icon_size = 0
-
-#-------------------------------------
-# Button 8
 button = new
 button_text = 
 button_tooltip = MPV / Volume
