@@ -117,7 +117,7 @@ label.separator {
 label:disabled {
   color: rgba(255, 255, 255, 0.5);
   opacity: 1;
-  filter: 0;
+  filter: none;
 }
 
 headerbar label:disabled, tab label:disabled, button label:disabled {
@@ -998,14 +998,14 @@ button.font > box > box > label, button.file > box > box > label {
   font-weight: bold;
 }
 
-windowcontrols button:not(.suggested-action):not(.destructive-action), filechooser #pathbarbox > stack > box > button, menubutton.circular > button, button.close, button.circular {
+windowcontrols > button:not(.suggested-action):not(.destructive-action), filechooser #pathbarbox > stack > box > button, menubutton.circular > button, button.close, button.circular {
   border-radius: 9999px;
   min-width: 24px;
   min-height: 24px;
   padding: 6px;
 }
 
-windowcontrols button:not(.suggested-action):not(.destructive-action) label, filechooser #pathbarbox > stack > box > button label, menubutton.circular > button label, button.close label, button.circular label {
+windowcontrols > button:not(.suggested-action):not(.destructive-action) label, filechooser #pathbarbox > stack > box > button label, menubutton.circular > button label, button.close label, button.circular label {
   padding: 0;
 }
 
@@ -2069,7 +2069,7 @@ headerbar .selection-mode {
 }
 
 headerbar.default-decoration {
-  min-height: 48px;
+  min-height: 36px;
   background-color: #2C2C2C;
   background-image: image(#2C2C2C);
   color: white;
@@ -4629,12 +4629,12 @@ paned.vertical > separator.wide {
 
 .sidebar-pane toolbarview > scrolledwindow .navigation-sidebar > row:selected,
 .sidebar-pane toolbarview > stacksidebar.sidebar > scrolledwindow .navigation-sidebar > row:selected {
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: #2C2C2C;
   color: #4DB6AC;
 }
 
 .sidebar-pane toolbarview > scrolledwindow .navigation-sidebar > row:selected:hover {
-  background-color: white;
+  background-color: #2f3a39;
 }
 
 .sidebar-pane toolbarview > scrolledwindow .navigation-sidebar > row:disabled,
@@ -4801,13 +4801,17 @@ paned.vertical > separator.wide {
 }
 
 .sidebar-pane placessidebar .navigation-sidebar > row:selected {
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: #2C2C2C;
 }
 
 .sidebar-pane placessidebar .navigation-sidebar > row:selected,
 .sidebar-pane placessidebar .navigation-sidebar > row:selected label.sidebar-label,
 .sidebar-pane placessidebar .navigation-sidebar > row:selected image.sidebar-icon {
   color: #4DB6AC;
+}
+
+.sidebar-pane placessidebar .navigation-sidebar > row:selected:hover {
+  background-color: #2f3a39;
 }
 
 .sidebar-pane placessidebar .navigation-sidebar > row.sidebar-new-bookmark-row {
@@ -5614,35 +5618,35 @@ window.ssd {
 
 windowcontrols {
   border-spacing: 6px;
+  padding: 6px;
+  margin: 0;
 }
 
 windowcontrols:not(.empty).start:dir(ltr), windowcontrols:not(.empty).end:dir(rtl) {
-  margin-right: 6px;
-  margin-left: 3px;
+  padding-left: 3px;
 }
 
 windowcontrols:not(.empty).start:dir(rtl), windowcontrols:not(.empty).end:dir(ltr) {
-  margin-left: 6px;
-  margin-right: 3px;
+  padding-right: 3px;
 }
 
-windowcontrols button:not(.suggested-action):not(.destructive-action) {
+windowcontrols > button:not(.suggested-action):not(.destructive-action) {
   min-height: 24px;
   min-width: 24px;
   padding: 0;
   margin: 0 3px;
 }
 
-windowcontrols button:not(.suggested-action):not(.destructive-action) image {
+windowcontrols > button:not(.suggested-action):not(.destructive-action) image {
   background: none;
 }
 
-windowcontrols button:not(.suggested-action):not(.destructive-action).close:hover {
+windowcontrols > button:not(.suggested-action):not(.destructive-action).close:hover {
   background-color: #4DB6AC;
   color: #2C2C2C;
 }
 
-windowcontrols button:not(.suggested-action):not(.destructive-action).close:active {
+windowcontrols > button:not(.suggested-action):not(.destructive-action).close:active {
   background-color: #3c948b;
   color: #2C2C2C;
 }

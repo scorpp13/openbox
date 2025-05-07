@@ -52,7 +52,7 @@ stage {
 }
 
 /* General Typography */
-.message-list .message-list-placeholder {
+.message-notification-group .message-group-header .message-group-title, .message-list .message-list-placeholder {
   font-weight: 800;
   font-size: 1.364em;
 }
@@ -197,101 +197,103 @@ StEntry StLabel.hint-text {
   box-shadow: none;
 }
 
-.icon-button.flat, .background-app-item .flat.close-button, .message .message-header .flat.message-expand-button,
-.message .message-header .flat.message-close-button, .button.flat {
+.icon-button.flat, .message .message-header .flat.message-expand-button,
+.message .message-header .flat.message-close-button, .message-notification-group .flat.message-collapse-button, .button.flat {
   color: rgba(255, 255, 255, 0.7);
   background-color: transparent;
   box-shadow: none;
 }
 
-.icon-button.flat:focus, .background-app-item .flat.close-button:focus, .message .message-header .flat.message-expand-button:focus,
-.message .message-header .flat.message-close-button:focus, .button.flat:focus {
+.icon-button.flat:focus, .message .message-header .flat.message-expand-button:focus,
+.message .message-header .flat.message-close-button:focus, .message-notification-group .flat.message-collapse-button:focus, .button.flat:focus {
   color: rgba(255, 255, 255, 0.9);
   box-shadow: none;
 }
 
-.icon-button.flat:hover, .background-app-item .flat.close-button:hover, .message .message-header .flat.message-expand-button:hover,
-.message .message-header .flat.message-close-button:hover, .button.flat:hover {
+.icon-button.flat:hover, .message .message-header .flat.message-expand-button:hover,
+.message .message-header .flat.message-close-button:hover, .message-notification-group .flat.message-collapse-button:hover, .button.flat:hover {
   color: rgba(255, 255, 255, 0.9);
   background-color: rgba(255, 255, 255, 0.06);
   box-shadow: none;
 }
 
-.icon-button.flat:selected, .background-app-item .flat.close-button:selected, .message .message-header .flat.message-expand-button:selected,
-.message .message-header .flat.message-close-button:selected, .button.flat:selected, .icon-button.flat:active, .background-app-item .flat.close-button:active, .message .message-header .flat.message-expand-button:active,
-.message .message-header .flat.message-close-button:active, .button.flat:active {
+.icon-button.flat:selected, .message .message-header .flat.message-expand-button:selected,
+.message .message-header .flat.message-close-button:selected, .message-notification-group .flat.message-collapse-button:selected, .button.flat:selected, .icon-button.flat:active, .message .message-header .flat.message-expand-button:active,
+.message .message-header .flat.message-close-button:active, .message-notification-group .flat.message-collapse-button:active, .button.flat:active {
   color: rgba(255, 255, 255, 0.9);
   background-color: rgba(255, 255, 255, 0.15);
   box-shadow: 0 0 transparent;
 }
 
-.icon-button.flat:checked, .background-app-item .flat.close-button:checked, .message .message-header .flat.message-expand-button:checked,
-.message .message-header .flat.message-close-button:checked, .button.flat:checked {
+.icon-button.flat:checked, .message .message-header .flat.message-expand-button:checked,
+.message .message-header .flat.message-close-button:checked, .message-notification-group .flat.message-collapse-button:checked, .button.flat:checked {
   color: rgba(255, 255, 255, 0.9);
   background-color: rgba(255, 255, 255, 0.15);
   box-shadow: 0 0 transparent;
 }
 
-.icon-button.flat:insensitive, .background-app-item .flat.close-button:insensitive, .message .message-header .flat.message-expand-button:insensitive,
-.message .message-header .flat.message-close-button:insensitive, .button.flat:insensitive {
+.icon-button.flat:insensitive, .message .message-header .flat.message-expand-button:insensitive,
+.message .message-header .flat.message-close-button:insensitive, .message-notification-group .flat.message-collapse-button:insensitive, .button.flat:insensitive {
   color: rgba(255, 255, 255, 0.3);
   background-color: transparent;
   box-shadow: none;
 }
 
-.icon-button.default, .background-app-item .default.close-button, .message .message-header .default.message-expand-button,
-.message .message-header .default.message-close-button, .button.default {
+.keyboard-brightness-level .button:checked, .icon-button.default, .message .message-header .default.message-expand-button,
+.message .message-header .default.message-close-button, .message-notification-group .default.message-collapse-button, .button.default {
   color: #FFFFFF;
   background-color: #66BB6A;
   border-color: rgba(255, 255, 255, 0.08);
   box-shadow: none;
 }
 
-.icon-button.default:focus, .background-app-item .default.close-button:focus, .message .message-header .default.message-expand-button:focus,
-.message .message-header .default.message-close-button:focus, .button.default:focus {
+.keyboard-brightness-level .button:focus:checked, .icon-button.default:focus, .message .message-header .default.message-expand-button:focus,
+.message .message-header .default.message-close-button:focus, .message-notification-group .default.message-collapse-button:focus, .button.default:focus {
   color: #66BB6A;
   box-shadow: none !important;
   outline: none !important;
 }
 
-.icon-button.default:focus:hover, .background-app-item .default.close-button:focus:hover, .message .message-header .default.message-expand-button:focus:hover,
-.message .message-header .default.message-close-button:focus:hover, .button.default:focus:hover, .icon-button.default:focus:active, .background-app-item .default.close-button:focus:active, .message .message-header .default.message-expand-button:focus:active,
-.message .message-header .default.message-close-button:focus:active, .button.default:focus:active {
+.keyboard-brightness-level .button:focus:hover:checked, .icon-button.default:focus:hover, .message .message-header .default.message-expand-button:focus:hover,
+.message .message-header .default.message-close-button:focus:hover, .message-notification-group .default.message-collapse-button:focus:hover, .button.default:focus:hover, .keyboard-brightness-level .button:focus:active:checked, .icon-button.default:focus:active, .message .message-header .default.message-expand-button:focus:active,
+.message .message-header .default.message-close-button:focus:active, .message-notification-group .default.message-collapse-button:focus:active, .button.default:focus:active {
   color: #66BB6A;
 }
 
-.icon-button.default:hover, .background-app-item .default.close-button:hover, .message .message-header .default.message-expand-button:hover,
-.message .message-header .default.message-close-button:hover, .button.default:hover {
+.keyboard-brightness-level .button:hover:checked, .icon-button.default:hover, .message .message-header .default.message-expand-button:hover,
+.message .message-header .default.message-close-button:hover, .message-notification-group .default.message-collapse-button:hover, .button.default:hover {
   color: #FFFFFF;
   background-color: #66BB6A;
   border-color: rgba(255, 255, 255, 0.15);
   box-shadow: none;
 }
 
-.icon-button.default:insensitive, .background-app-item .default.close-button:insensitive, .message .message-header .default.message-expand-button:insensitive,
-.message .message-header .default.message-close-button:insensitive, .button.default:insensitive {
+.keyboard-brightness-level .button:insensitive:checked, .icon-button.default:insensitive, .message .message-header .default.message-expand-button:insensitive,
+.message .message-header .default.message-close-button:insensitive, .message-notification-group .default.message-collapse-button:insensitive, .button.default:insensitive {
   color: #FFFFFF;
   background-color: #66BB6A;
   border-color: transparent;
   box-shadow: none;
 }
 
-.icon-button.default:active, .background-app-item .default.close-button:active, .message .message-header .default.message-expand-button:active,
-.message .message-header .default.message-close-button:active, .button.default:active {
+.keyboard-brightness-level .button:active:checked, .icon-button.default:active, .message .message-header .default.message-expand-button:active,
+.message .message-header .default.message-close-button:active, .message-notification-group .default.message-collapse-button:active, .button.default:active {
   color: #FFFFFF;
   background-color: #78c37b;
   border-color: rgba(255, 255, 255, 0.15);
   box-shadow: none;
 }
 
-.icon-button.default:active:hover, .background-app-item .default.close-button:active:hover, .message .message-header .default.message-expand-button:active:hover,
-.message .message-header .default.message-close-button:active:hover, .button.default:active:hover, .icon-button.default:active:focus, .background-app-item .default.close-button:active:focus, .message .message-header .default.message-expand-button:active:focus,
-.message .message-header .default.message-close-button:active:focus, .button.default:active:focus {
+.keyboard-brightness-level .button:active:hover:checked, .icon-button.default:active:hover, .message .message-header .default.message-expand-button:active:hover,
+.message .message-header .default.message-close-button:active:hover, .message-notification-group .default.message-collapse-button:active:hover, .button.default:active:hover, .keyboard-brightness-level .button:active:focus:checked, .icon-button.default:active:focus, .message .message-header .default.message-expand-button:active:focus,
+.message .message-header .default.message-close-button:active:focus, .message-notification-group .default.message-collapse-button:active:focus, .button.default:active:focus {
   background-color: #78c37b;
 }
 
-.icon-button, .background-app-item .close-button, .message .message-header .message-expand-button,
-.message .message-header .message-close-button, .button {
+.icon-button, .background-app-item .icon-button, .background-app-item .message-notification-group .message-collapse-button, .message-notification-group .background-app-item .message-collapse-button, .background-app-item .message .message-header .message-expand-button, .message .message-header .background-app-item .message-expand-button,
+.background-app-item .message .message-header .message-close-button,
+.message .message-header .background-app-item .message-close-button, .message .message-header .message-expand-button,
+.message .message-header .message-close-button, .message-notification-group .message-collapse-button, .button {
   padding: 6px 12px;
   border-width: 0;
   border-radius: 3px;
@@ -302,43 +304,43 @@ StEntry StLabel.hint-text {
   box-shadow: none;
 }
 
-.icon-button:focus, .background-app-item .close-button:focus, .message .message-header .message-expand-button:focus,
-.message .message-header .message-close-button:focus, .button:focus {
+.icon-button:focus, .message .message-header .message-expand-button:focus,
+.message .message-header .message-close-button:focus, .message-notification-group .message-collapse-button:focus, .button:focus {
   color: rgba(255, 255, 255, 0.9);
   box-shadow: none;
 }
 
-.icon-button:hover, .background-app-item .close-button:hover, .message .message-header .message-expand-button:hover,
-.message .message-header .message-close-button:hover, .button:hover {
+.icon-button:hover, .message .message-header .message-expand-button:hover,
+.message .message-header .message-close-button:hover, .message-notification-group .message-collapse-button:hover, .button:hover {
   color: rgba(255, 255, 255, 0.9);
   background-color: rgba(255, 255, 255, 0.06);
   box-shadow: none;
 }
 
-.icon-button:selected, .background-app-item .close-button:selected, .message .message-header .message-expand-button:selected,
-.message .message-header .message-close-button:selected, .button:selected, .icon-button:active, .background-app-item .close-button:active, .message .message-header .message-expand-button:active,
-.message .message-header .message-close-button:active, .button:active {
+.icon-button:selected, .message .message-header .message-expand-button:selected,
+.message .message-header .message-close-button:selected, .message-notification-group .message-collapse-button:selected, .button:selected, .icon-button:active, .message .message-header .message-expand-button:active,
+.message .message-header .message-close-button:active, .message-notification-group .message-collapse-button:active, .button:active {
   color: rgba(255, 255, 255, 0.9);
   background-color: rgba(255, 255, 255, 0.15);
   box-shadow: 0 0 transparent;
 }
 
-.icon-button:checked, .background-app-item .close-button:checked, .message .message-header .message-expand-button:checked,
-.message .message-header .message-close-button:checked, .button:checked {
+.icon-button:checked, .message .message-header .message-expand-button:checked,
+.message .message-header .message-close-button:checked, .message-notification-group .message-collapse-button:checked, .button:checked {
   color: rgba(255, 255, 255, 0.85);
   background-color: #66BB6A;
   border-color: #66BB6A;
   box-shadow: none;
 }
 
-.icon-button:checked:hover, .background-app-item .close-button:checked:hover, .message .message-header .message-expand-button:checked:hover,
-.message .message-header .message-close-button:checked:hover, .button:checked:hover, .icon-button:checked:focus, .background-app-item .close-button:checked:focus, .message .message-header .message-expand-button:checked:focus,
-.message .message-header .message-close-button:checked:focus, .button:checked:focus {
+.icon-button:checked:hover, .message .message-header .message-expand-button:checked:hover,
+.message .message-header .message-close-button:checked:hover, .message-notification-group .message-collapse-button:checked:hover, .button:checked:hover, .icon-button:checked:focus, .message .message-header .message-expand-button:checked:focus,
+.message .message-header .message-close-button:checked:focus, .message-notification-group .message-collapse-button:checked:focus, .button:checked:focus {
   background-color: #66BB6A;
 }
 
-.icon-button:insensitive, .background-app-item .close-button:insensitive, .message .message-header .message-expand-button:insensitive,
-.message .message-header .message-close-button:insensitive, .button:insensitive {
+.icon-button:insensitive, .message .message-header .message-expand-button:insensitive,
+.message .message-header .message-close-button:insensitive, .message-notification-group .message-collapse-button:insensitive, .button:insensitive {
   color: rgba(255, 255, 255, 0.3);
   background-color: transparent;
   box-shadow: none;
@@ -403,15 +405,19 @@ StEntry StLabel.hint-text {
   min-height: 1.5em;
 }
 
-.icon-button, .background-app-item .close-button, .message .message-header .message-expand-button,
-.message .message-header .message-close-button {
+.icon-button, .background-app-item .icon-button, .background-app-item .message-notification-group .message-collapse-button, .message-notification-group .background-app-item .message-collapse-button, .background-app-item .message .message-header .message-expand-button, .message .message-header .background-app-item .message-expand-button,
+.background-app-item .message .message-header .message-close-button,
+.message .message-header .background-app-item .message-close-button, .message .message-header .message-expand-button,
+.message .message-header .message-close-button, .message-notification-group .message-collapse-button {
   border-radius: 9999px;
   padding: 0.818em;
   min-height: 1.091em;
 }
 
-.icon-button StIcon, .background-app-item .close-button StIcon, .message .message-header .message-expand-button StIcon,
-.message .message-header .message-close-button StIcon {
+.icon-button StIcon, .background-app-item .icon-button StIcon, .background-app-item .message-notification-group .message-collapse-button StIcon, .message-notification-group .background-app-item .message-collapse-button StIcon, .background-app-item .message .message-header .message-expand-button StIcon, .message .message-header .background-app-item .message-expand-button StIcon,
+.background-app-item .message .message-header .message-close-button StIcon,
+.message .message-header .background-app-item .message-close-button StIcon, .message .message-header .message-expand-button StIcon,
+.message .message-header .message-close-button StIcon, .message-notification-group .message-collapse-button StIcon {
   icon-size: 1.091em;
   -st-icon-style: symbolic;
 }
@@ -1202,14 +1208,14 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 .message-list:ltr {
   margin-left: 6px;
   margin-right: 0;
-  padding-right: 12px;
+  padding-right: 4px;
   border-right-width: 1px;
 }
 
 .message-list:rtl {
   margin-right: 6px;
   margin-left: 0;
-  padding-left: 12px;
+  padding-left: 4px;
   border-left-width: 1px;
 }
 
@@ -1223,21 +1229,20 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   -st-icon-style: symbolic;
 }
 
-.message-list-sections {
-  spacing: 12px;
+.message-view {
+  -st-vfade-offset: 68px;
 }
 
-.message-list-sections:ltr {
-  margin-right: 0;
+.message-view:ltr {
+  margin-right: 12px;
 }
 
-.message-list-sections:rtl {
-  margin-left: 0;
+.message-view:rtl {
+  margin-left: 12px;
 }
 
-.message-list-section,
-.message-list-section-list {
-  spacing: 12px;
+.message-view .message {
+  margin-bottom: 12px !important;
 }
 
 .message-list-controls {
@@ -1257,8 +1262,34 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   border-color: rgba(102, 187, 106, 0.6);
 }
 
+.message-notification-group {
+  spacing: 12px;
+}
+
+.message-notification-group .message-group-header {
+  padding: 6px;
+}
+
+.message-notification-group .message-group-header .message-group-title {
+  margin: 0 4px;
+}
+
+.message-notification-group .message-collapse-button {
+  color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 4px;
+}
+
+.message-notification-group .message-collapse-button:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.message-notification-group .message-collapse-button:active {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
 .message {
-  background-color: rgba(255, 255, 255, 0.03);
+  background-color: #202020;
   border-radius: 3px;
   color: rgba(255, 255, 255, 0.7);
   text-shadow: none;
@@ -1278,35 +1309,46 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 .popup-menu .message {
   margin: 0 0 4px;
   box-shadow: none;
-  background-color: rgba(255, 255, 255, 0.03);
+  background-color: #272727;
   border-radius: 3px;
   color: rgba(255, 255, 255, 0.7);
   border: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 .popup-menu .message:hover, .popup-menu .message:focus {
-  background-color: rgba(255, 255, 255, 0.08);
+  background-color: #323232;
   border-color: rgba(255, 255, 255, 0.08);
+  box-shadow: none;
 }
 
 .popup-menu .message:active {
-  background-color: rgba(255, 255, 255, 0.12);
+  background-color: #3b3b3b;
+  box-shadow: none;
 }
 
-.message:ltr {
-  padding-right: -2px;
+.message:second-in-stack {
+  background-color: #2c2c2c;
+  box-shadow: none;
 }
 
-.message:rtl {
-  padding-left: -2px;
+.message:lower-in-stack {
+  background-color: #313131;
+  box-shadow: none;
+  border-color: rgba(255, 255, 255, 0.05);
 }
 
 .message .message-header {
   padding: 0 0.409em;
-  margin: 6px;
-  margin-bottom: 0;
   spacing: 6px;
   color: rgba(255, 255, 255, 0.5);
+}
+
+.message .message-header:ltr {
+  padding-right: 0;
+}
+
+.message .message-header:rtl {
+  padding-left: 0;
 }
 
 .message .message-header .message-source-icon {
@@ -1361,15 +1403,15 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 
 .message .message-header .message-expand-button {
-  padding: 6px;
+  padding: 4px;
 }
 
 .message .message-header .message-expand-button:ltr {
-  margin-right: 6px;
+  margin-right: 0;
 }
 
 .message .message-header .message-expand-button:rtl {
-  margin-left: 6px;
+  margin-left: 0;
 }
 
 .message .message-box {
@@ -2767,7 +2809,7 @@ StWidget.focused .app-grid-running-dot {
   color: rgba(255, 255, 255, 0.7);
 }
 
-.app-folder-dialog .folder-name-container .icon-button, .app-folder-dialog .folder-name-container .background-app-item .close-button, .background-app-item .app-folder-dialog .folder-name-container .close-button, .app-folder-dialog .folder-name-container .message .message-header .message-expand-button, .message .message-header .app-folder-dialog .folder-name-container .message-expand-button,
+.app-folder-dialog .folder-name-container .icon-button, .app-folder-dialog .folder-name-container .message-notification-group .message-collapse-button, .message-notification-group .app-folder-dialog .folder-name-container .message-collapse-button, .app-folder-dialog .folder-name-container .message .message-header .message-expand-button, .message .message-header .app-folder-dialog .folder-name-container .message-expand-button,
 .app-folder-dialog .folder-name-container .message .message-header .message-close-button,
 .message .message-header .app-folder-dialog .folder-name-container .message-close-button {
   background-color: rgba(255, 255, 255, 0.08);
@@ -2779,19 +2821,20 @@ StWidget.focused .app-grid-running-dot {
   border-radius: 18px;
 }
 
-.app-folder-dialog .folder-name-container .icon-button > StIcon, .app-folder-dialog .folder-name-container .background-app-item .close-button > StIcon, .background-app-item .app-folder-dialog .folder-name-container .close-button > StIcon, .app-folder-dialog .folder-name-container .message .message-header .message-expand-button > StIcon, .message .message-header .app-folder-dialog .folder-name-container .message-expand-button > StIcon,
+.app-folder-dialog .folder-name-container .icon-button > StIcon, .app-folder-dialog .folder-name-container .background-app-item .icon-button > StIcon, .app-folder-dialog .folder-name-container .message-notification-group .background-app-item .message-collapse-button > StIcon, .app-folder-dialog .folder-name-container .message .message-header .background-app-item .message-expand-button > StIcon,
+.app-folder-dialog .folder-name-container .message .message-header .background-app-item .message-close-button > StIcon, .app-folder-dialog .folder-name-container .message-notification-group .message-collapse-button > StIcon, .message-notification-group .app-folder-dialog .folder-name-container .message-collapse-button > StIcon, .app-folder-dialog .folder-name-container .message .message-header .message-expand-button > StIcon, .message .message-header .app-folder-dialog .folder-name-container .message-expand-button > StIcon,
 .app-folder-dialog .folder-name-container .message .message-header .message-close-button > StIcon,
 .message .message-header .app-folder-dialog .folder-name-container .message-close-button > StIcon {
   icon-size: 16px;
 }
 
-.app-folder-dialog .folder-name-container .icon-button:hover, .app-folder-dialog .folder-name-container .background-app-item .close-button:hover, .background-app-item .app-folder-dialog .folder-name-container .close-button:hover, .app-folder-dialog .folder-name-container .message .message-header .message-expand-button:hover, .message .message-header .app-folder-dialog .folder-name-container .message-expand-button:hover,
+.app-folder-dialog .folder-name-container .icon-button:hover, .app-folder-dialog .folder-name-container .message-notification-group .message-collapse-button:hover, .message-notification-group .app-folder-dialog .folder-name-container .message-collapse-button:hover, .app-folder-dialog .folder-name-container .message .message-header .message-expand-button:hover, .message .message-header .app-folder-dialog .folder-name-container .message-expand-button:hover,
 .app-folder-dialog .folder-name-container .message .message-header .message-close-button:hover,
 .message .message-header .app-folder-dialog .folder-name-container .message-close-button:hover {
   background-color: rgba(255, 255, 255, 0.15);
 }
 
-.app-folder-dialog .folder-name-container .icon-button:focus, .app-folder-dialog .folder-name-container .background-app-item .close-button:focus, .background-app-item .app-folder-dialog .folder-name-container .close-button:focus, .app-folder-dialog .folder-name-container .message .message-header .message-expand-button:focus, .message .message-header .app-folder-dialog .folder-name-container .message-expand-button:focus,
+.app-folder-dialog .folder-name-container .icon-button:focus, .app-folder-dialog .folder-name-container .message-notification-group .message-collapse-button:focus, .message-notification-group .app-folder-dialog .folder-name-container .message-collapse-button:focus, .app-folder-dialog .folder-name-container .message .message-header .message-expand-button:focus, .message .message-header .app-folder-dialog .folder-name-container .message-expand-button:focus,
 .app-folder-dialog .folder-name-container .message .message-header .message-close-button:focus,
 .message .message-header .app-folder-dialog .folder-name-container .message-close-button:focus {
   border: none !important;
@@ -2799,9 +2842,9 @@ StWidget.focused .app-grid-running-dot {
   outline: none !important;
 }
 
-.app-folder-dialog .folder-name-container .icon-button:checked, .app-folder-dialog .folder-name-container .background-app-item .close-button:checked, .background-app-item .app-folder-dialog .folder-name-container .close-button:checked, .app-folder-dialog .folder-name-container .message .message-header .message-expand-button:checked, .message .message-header .app-folder-dialog .folder-name-container .message-expand-button:checked,
+.app-folder-dialog .folder-name-container .icon-button:checked, .app-folder-dialog .folder-name-container .message-notification-group .message-collapse-button:checked, .message-notification-group .app-folder-dialog .folder-name-container .message-collapse-button:checked, .app-folder-dialog .folder-name-container .message .message-header .message-expand-button:checked, .message .message-header .app-folder-dialog .folder-name-container .message-expand-button:checked,
 .app-folder-dialog .folder-name-container .message .message-header .message-close-button:checked,
-.message .message-header .app-folder-dialog .folder-name-container .message-close-button:checked, .app-folder-dialog .folder-name-container .icon-button:active, .app-folder-dialog .folder-name-container .background-app-item .close-button:active, .background-app-item .app-folder-dialog .folder-name-container .close-button:active, .app-folder-dialog .folder-name-container .message .message-header .message-expand-button:active, .message .message-header .app-folder-dialog .folder-name-container .message-expand-button:active,
+.message .message-header .app-folder-dialog .folder-name-container .message-close-button:checked, .app-folder-dialog .folder-name-container .icon-button:active, .app-folder-dialog .folder-name-container .message-notification-group .message-collapse-button:active, .message-notification-group .app-folder-dialog .folder-name-container .message-collapse-button:active, .app-folder-dialog .folder-name-container .message .message-header .message-expand-button:active, .message .message-header .app-folder-dialog .folder-name-container .message-expand-button:active,
 .app-folder-dialog .folder-name-container .message .message-header .message-close-button:active,
 .message .message-header .app-folder-dialog .folder-name-container .message-close-button:active {
   background-color: rgba(255, 255, 255, 0.3);
@@ -3342,13 +3385,14 @@ StWidget.focused .app-grid-running-dot {
   padding: 10px 12px 14px !important;
 }
 
-.quick-settings .icon-button, .quick-settings .background-app-item .close-button, .background-app-item .quick-settings .close-button, .quick-settings .message .message-header .message-expand-button, .message .message-header .quick-settings .message-expand-button,
+.quick-settings .icon-button, .quick-settings .message-notification-group .message-collapse-button, .message-notification-group .quick-settings .message-collapse-button, .quick-settings .message .message-header .message-expand-button, .message .message-header .quick-settings .message-expand-button,
 .quick-settings .message .message-header .message-close-button,
 .message .message-header .quick-settings .message-close-button, .quick-settings .button {
   padding: 9px;
 }
 
-.quick-settings .icon-button > StIcon, .quick-settings .background-app-item .close-button > StIcon, .background-app-item .quick-settings .close-button > StIcon, .quick-settings .message .message-header .message-expand-button > StIcon, .message .message-header .quick-settings .message-expand-button > StIcon,
+.quick-settings .icon-button > StIcon, .quick-settings .background-app-item .icon-button > StIcon, .quick-settings .message-notification-group .background-app-item .message-collapse-button > StIcon, .quick-settings .message .message-header .background-app-item .message-expand-button > StIcon,
+.quick-settings .message .message-header .background-app-item .message-close-button > StIcon, .quick-settings .message-notification-group .message-collapse-button > StIcon, .message-notification-group .quick-settings .message-collapse-button > StIcon, .quick-settings .message .message-header .message-expand-button > StIcon, .message .message-header .quick-settings .message-expand-button > StIcon,
 .quick-settings .message .message-header .message-close-button > StIcon,
 .message .message-header .quick-settings .message-close-button > StIcon, .quick-settings .button > StIcon {
   icon-size: 16px;
@@ -3359,7 +3403,7 @@ StWidget.focused .app-grid-running-dot {
   spacing-columns: 12px;
 }
 
-.quick-toggle, .quick-menu-toggle {
+.quick-toggle, .quick-toggle-has-menu {
   border-radius: 3px;
   min-width: 12em;
   max-width: 12em;
@@ -3410,11 +3454,11 @@ StWidget.focused .app-grid-running-dot {
 }
 
 .quick-toggle:ltr > StBoxLayout {
-  padding-left: 15px;
+  padding-left: 24px;
 }
 
 .quick-toggle:rtl > StBoxLayout {
-  padding-right: 15px;
+  padding-right: 24px;
 }
 
 .quick-toggle .quick-toggle-title {
@@ -3430,75 +3474,76 @@ StWidget.focused .app-grid-running-dot {
   icon-size: 16px;
 }
 
-.quick-menu-toggle .quick-toggle {
+.quick-toggle-has-menu .quick-toggle {
   min-width: auto;
   max-width: auto;
 }
 
-.quick-menu-toggle .quick-toggle:ltr {
+.quick-toggle-has-menu .quick-toggle:ltr {
   border-radius: 3px 0 0 3px;
 }
 
-.quick-menu-toggle .quick-toggle:ltr > StBoxLayout {
-  padding-right: 9px;
+.quick-toggle-has-menu .quick-toggle:ltr > StBoxLayout {
+  padding-right: 12px;
 }
 
-.quick-menu-toggle .quick-toggle:rtl {
+.quick-toggle-has-menu .quick-toggle:rtl {
   border-radius: 0 3px 3px 0;
 }
 
-.quick-menu-toggle .quick-toggle:rtr > StBoxLayout {
-  padding-left: 9px;
+.quick-toggle-has-menu .quick-toggle:rtr > StBoxLayout {
+  padding-left: 12px;
 }
 
-.quick-menu-toggle .quick-toggle:ltr:last-child {
+.quick-toggle-has-menu .quick-toggle:ltr:last-child {
   border-radius: 3px;
 }
 
-.quick-menu-toggle .quick-toggle:rtl:last-child {
+.quick-toggle-has-menu .quick-toggle:rtl:last-child {
   border-radius: 3px;
 }
 
-.quick-menu-toggle .quick-toggle-arrow {
-  background-color: rgba(255, 255, 255, 0.06) !important;
+.quick-toggle-has-menu .quick-toggle-menu-button {
   padding: 6px 12px;
-  border-width: 0;
-  color: rgba(255, 255, 255, 0.7);
+  border: none;
+  background-color: rgba(255, 255, 255, 0.06) !important;
 }
 
-.quick-menu-toggle .quick-toggle-arrow:hover {
+.quick-toggle-has-menu .quick-toggle-menu-button:hover {
   background-color: rgba(255, 255, 255, 0.12) !important;
-  color: rgba(255, 255, 255, 0.9);
 }
 
-.quick-menu-toggle .quick-toggle-arrow:active {
+.quick-toggle-has-menu .quick-toggle-menu-button:active {
   background-color: rgba(255, 255, 255, 0.15) !important;
-  color: rgba(255, 255, 255, 0.9);
 }
 
-.quick-menu-toggle .quick-toggle-arrow:checked {
+.quick-toggle-has-menu .quick-toggle-menu-button:checked {
   background-color: #66BB6A !important;
   color: white;
 }
 
-.quick-menu-toggle .quick-toggle-arrow:checked:hover {
-  background-color: rgba(110, 190, 113, 0.994) !important;
+.quick-toggle-has-menu .quick-toggle-menu-button:checked:hover {
   color: white;
+  background-color: st-mix(rgba(255, 255, 255, 0.9), #66BB6A, 6%) !important;
 }
 
-.quick-menu-toggle .quick-toggle-arrow:checked:active {
-  background-color: rgba(121, 196, 125, 0.985) !important;
+.quick-toggle-has-menu .quick-toggle-menu-button:checked:active {
   color: white;
+  background-color: st-mix(rgba(255, 255, 255, 0.9), #66BB6A, 15%) !important;
 }
 
-.quick-menu-toggle .quick-toggle-arrow:ltr {
+.quick-toggle-has-menu .quick-toggle-menu-button:ltr {
   border-radius: 0 3px 3px 0;
   border-left-width: 0;
 }
 
-.quick-menu-toggle .quick-toggle-arrow:rtl {
+.quick-toggle-has-menu .quick-toggle-menu-button:rtl {
   border-radius: 3px 0 0 3px;
   border-right-width: 0;
+}
+
+.quick-toggle-has-menu .quick-toggle-separator {
+  width: 0;
 }
 
 .quick-slider > StBoxLayout {
@@ -3525,7 +3570,7 @@ StWidget.focused .app-grid-running-dot {
   icon-size: 16px;
 }
 
-.quick-slider .icon-button, .quick-slider .background-app-item .close-button, .background-app-item .quick-slider .close-button, .quick-slider .message .message-header .message-expand-button, .message .message-header .quick-slider .message-expand-button,
+.quick-slider .icon-button, .quick-slider .message-notification-group .message-collapse-button, .message-notification-group .quick-slider .message-collapse-button, .quick-slider .message .message-header .message-expand-button, .message .message-header .quick-slider .message-expand-button,
 .quick-slider .message .message-header .message-close-button,
 .message .message-header .quick-slider .message-close-button {
   min-width: 22px;
@@ -3534,13 +3579,13 @@ StWidget.focused .app-grid-running-dot {
   color: rgba(255, 255, 255, 0.9) !important;
 }
 
-.quick-slider .icon-button:hover, .quick-slider .background-app-item .close-button:hover, .background-app-item .quick-slider .close-button:hover, .quick-slider .message .message-header .message-expand-button:hover, .message .message-header .quick-slider .message-expand-button:hover,
+.quick-slider .icon-button:hover, .quick-slider .message-notification-group .message-collapse-button:hover, .message-notification-group .quick-slider .message-collapse-button:hover, .quick-slider .message .message-header .message-expand-button:hover, .message .message-header .quick-slider .message-expand-button:hover,
 .quick-slider .message .message-header .message-close-button:hover,
 .message .message-header .quick-slider .message-close-button:hover {
   background-color: rgba(255, 255, 255, 0.06);
 }
 
-.quick-slider .icon-button:active, .quick-slider .background-app-item .close-button:active, .background-app-item .quick-slider .close-button:active, .quick-slider .message .message-header .message-expand-button:active, .message .message-header .quick-slider .message-expand-button:active,
+.quick-slider .icon-button:active, .quick-slider .message-notification-group .message-collapse-button:active, .message-notification-group .quick-slider .message-collapse-button:active, .quick-slider .message .message-header .message-expand-button:active, .message .message-header .quick-slider .message-expand-button:active,
 .quick-slider .message .message-header .message-close-button:active,
 .message .message-header .quick-slider .message-close-button:active {
   background-color: rgba(255, 255, 255, 0.12);
@@ -3552,11 +3597,12 @@ StWidget.focused .app-grid-running-dot {
   border-radius: 3px !important;
   padding: 12px;
   margin: 12px 18px 0 !important;
+  border: none !important;
 }
 
 .quick-toggle-menu .popup-menu-item {
   border-radius: 3px !important;
-  margin: 0 !important;
+  min-height: 20px;
 }
 
 .quick-toggle-menu .popup-menu-item:focus, .quick-toggle-menu .popup-menu-item:hover, .quick-toggle-menu .popup-menu-item.selected {
@@ -3595,29 +3641,30 @@ StWidget.focused .app-grid-running-dot {
   spacing: 12px;
 }
 
-.quick-settings-system-item .icon-button, .quick-settings-system-item .background-app-item .close-button, .background-app-item .quick-settings-system-item .close-button, .quick-settings-system-item .message .message-header .message-expand-button, .message .message-header .quick-settings-system-item .message-expand-button,
+.quick-settings-system-item .icon-button, .quick-settings-system-item .message-notification-group .message-collapse-button, .message-notification-group .quick-settings-system-item .message-collapse-button, .quick-settings-system-item .message .message-header .message-expand-button, .message .message-header .quick-settings-system-item .message-expand-button,
 .quick-settings-system-item .message .message-header .message-close-button,
 .message .message-header .quick-settings-system-item .message-close-button {
   background-color: rgba(255, 255, 255, 0.06);
   color: rgba(255, 255, 255, 0.9);
   border-radius: 3px;
   min-height: 22px;
-  min-width: 22px;
+  min-width: 22px !important;
 }
 
-.quick-settings-system-item .icon-button:hover, .quick-settings-system-item .background-app-item .close-button:hover, .background-app-item .quick-settings-system-item .close-button:hover, .quick-settings-system-item .message .message-header .message-expand-button:hover, .message .message-header .quick-settings-system-item .message-expand-button:hover,
+.quick-settings-system-item .icon-button:hover, .quick-settings-system-item .message-notification-group .message-collapse-button:hover, .message-notification-group .quick-settings-system-item .message-collapse-button:hover, .quick-settings-system-item .message .message-header .message-expand-button:hover, .message .message-header .quick-settings-system-item .message-expand-button:hover,
 .quick-settings-system-item .message .message-header .message-close-button:hover,
 .message .message-header .quick-settings-system-item .message-close-button:hover {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
-.quick-settings-system-item .icon-button:active, .quick-settings-system-item .background-app-item .close-button:active, .background-app-item .quick-settings-system-item .close-button:active, .quick-settings-system-item .message .message-header .message-expand-button:active, .message .message-header .quick-settings-system-item .message-expand-button:active,
+.quick-settings-system-item .icon-button:active, .quick-settings-system-item .message-notification-group .message-collapse-button:active, .message-notification-group .quick-settings-system-item .message-collapse-button:active, .quick-settings-system-item .message .message-header .message-expand-button:active, .message .message-header .quick-settings-system-item .message-expand-button:active,
 .quick-settings-system-item .message .message-header .message-close-button:active,
 .message .message-header .quick-settings-system-item .message-close-button:active {
   background-color: rgba(255, 255, 255, 0.15);
 }
 
-.quick-settings-system-item .icon-button > StIcon, .quick-settings-system-item .background-app-item .close-button > StIcon, .background-app-item .quick-settings-system-item .close-button > StIcon, .quick-settings-system-item .message .message-header .message-expand-button > StIcon, .message .message-header .quick-settings-system-item .message-expand-button > StIcon,
+.quick-settings-system-item .icon-button > StIcon, .quick-settings-system-item .background-app-item .icon-button > StIcon, .quick-settings-system-item .message-notification-group .background-app-item .message-collapse-button > StIcon, .quick-settings-system-item .message .message-header .background-app-item .message-expand-button > StIcon,
+.quick-settings-system-item .message .message-header .background-app-item .message-close-button > StIcon, .quick-settings-system-item .message-notification-group .message-collapse-button > StIcon, .message-notification-group .quick-settings-system-item .message-collapse-button > StIcon, .quick-settings-system-item .message .message-header .message-expand-button > StIcon, .message .message-header .quick-settings-system-item .message-expand-button > StIcon,
 .quick-settings-system-item .message .message-header .message-close-button > StIcon,
 .message .message-header .quick-settings-system-item .message-close-button > StIcon {
   -st-icon-style: symbolic;
@@ -3654,6 +3701,10 @@ StWidget.focused .app-grid-running-dot {
   color: rgba(255, 255, 255, 0.5);
 }
 
+.keyboard-brightness-level {
+  spacing: 6px;
+}
+
 .background-apps-quick-toggle {
   min-height: 40px;
   background-color: transparent;
@@ -3664,11 +3715,17 @@ StWidget.focused .app-grid-running-dot {
 }
 
 .background-app-item .popup-menu-icon {
-  icon-size: 32px !important;
+  icon-size: 24px !important;
   -st-icon-style: regular !important;
 }
 
-.background-app-item .close-button {
+.background-app-item .icon-button, .background-app-item .message-notification-group .message-collapse-button, .message-notification-group .background-app-item .message-collapse-button, .background-app-item .message .message-header .message-expand-button, .message .message-header .background-app-item .message-expand-button,
+.background-app-item .message .message-header .message-close-button,
+.message .message-header .background-app-item .message-close-button {
+  padding: 6px;
+}
+
+.background-app-item .spinner {
   padding: 6px;
 }
 
