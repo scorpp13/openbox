@@ -349,11 +349,6 @@
         <command>kitty</command>
       </action>
     </keybind>
-    <keybind key="W-C-Return">
-      <action name="Execute">
-        <command>alacritty</command>
-      </action>
-    </keybind>
     <keybind key="W-S-R">
       <action name="Execute">
         <command>openbox --restart</command>
