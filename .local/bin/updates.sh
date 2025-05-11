@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/usr/bin/env bash
 threshhold_zero=0
 icon=$HOME/.local/bin/suse_logo.svg
 updates=$(zypper lu | grep v | wc -l)

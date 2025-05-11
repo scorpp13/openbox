@@ -171,6 +171,7 @@
   <keyboard>
     <chainQuitKey>C-g</chainQuitKey>
     <!-- Move window-focus across visible windows. -->
+    <!--     "W +arrows" --><!--AMC 			Window-focus -->
     <keybind key="W-Left">
       <action name="DirectionalCycleWindows">
         <bar>yes</bar>
@@ -200,6 +201,7 @@
       </action>
     </keybind>
     <!-- Tile window-placement across visible windows. -->
+    <!--     "W-S +arrows" --><!--AMC 		Resize window -->
     <keybind key="W-S-Left">
       <action name="MoveResizeTo">
         <x>0</x>
@@ -219,8 +221,8 @@
     <keybind key="W-S-Up">
       <action name="MoveResizeTo">
         <y>0</y>
-        <width>1/2</width>
-        <height>1/2</height>
+        <width>2/3</width>
+        <height>2/3</height>
       </action>
     </keybind>
     <keybind key="W-S-Down">
@@ -231,6 +233,8 @@
       </action>
     </keybind>
     <!-- Manage workspaces/desktop. -->
+    <!--     "W +number" --><!--AMC 		Go to desktop -->
+    <!--     "W-S +number" --><!--AMC 		Send to desktop -->
     <keybind key="W-1">
       <action name="GoToDesktop">
         <to>1</to>
@@ -277,13 +281,13 @@
         <menu>client-menu</menu>
       </action>
     </keybind>
-    <keybind key="W-Escape">
+    <keybind key="W-Escape"><!--AMC 		Close window -->
       <action name="Close"/>
     </keybind>
-    <keybind key="W-d">
+    <keybind key="W-d"><!--AMC 			Toggle desktop -->
       <action name="ToggleShowDesktop"/>
     </keybind>
-    <keybind key="W-f">
+    <keybind key="W-f"><!--AMC 			Toggle fullscreen -->
       <action name="ToggleFullscreen"/>
     </keybind>
     <keybind key="W-space">
@@ -322,41 +326,46 @@
       </action>
     </keybind>
     <!-- Rofi extras menu -->
-    <keybind key="W-R">
+    <keybind key="W-r"><!--AMC 			Rofi extras -->
       <action name="Execute">
         <command>~/.config/rofi/scripts/rofi-exts.sh</command>
       </action>
     </keybind>
     <!-- Dunst-specifics -->
-    <keybind key="C-Escape">
+    <keybind key="C-Escape"><!--AMC 		Dunst history -->
       <action name="Execute">
         <command>dunstctl history-pop</command>
       </action>
     </keybind>
     <!-- Miscellaneous -->
-    <keybind key="W-e">
+    <keybind key="W-e"><!--AMC 			File manager -->
       <action name="Execute">
         <command>xdg-open .</command>
       </action>
     </keybind>
-    <keybind key="W-w">
+    <keybind key="W-w"><!--AMC 			Browser -->
       <action name="Execute">
         <command>xdg-open http://</command>
       </action>
     </keybind>
-    <keybind key="W-Return">
+    <keybind key="W-Return"><!--AMC 		Terminal -->
       <action name="Execute">
         <command>kitty</command>
       </action>
     </keybind>
-    <keybind key="W-S-R">
+    <keybind key="W-S-r"><!--AMC 			Restart Openbox -->
       <action name="Execute">
         <command>openbox --restart</command>
       </action>
     </keybind>
-    <keybind key="W-C-R">
+    <keybind key="W-C-r"><!--AMC 			Reconfigure Openbox -->
       <action name="Execute">
         <command>openbox --reconfigure</command>
+      </action>
+    </keybind>
+    <keybind key="C-A-k"><!--AMC 			Keybindings -->
+      <action name="Execute">
+        <command>~/.config/openbox/keybinds.sh</command>
       </action>
     </keybind>
   </keyboard>

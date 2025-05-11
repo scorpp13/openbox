@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/usr/bin/env bash
 
 # This script convert *.png images to *.jpg
 DIR=$(gum file --directory "$HOME")

@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/usr/bin/env bash
 
 export LANG='POSIX'
 exec 2>/dev/null
