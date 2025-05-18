@@ -9,15 +9,17 @@ alsa-utils
   bashmount
 breeze6-style
 brightnessctl
-btop
 dunst
 fastfetch
+ffmpeg
 fish                    # zsh (any shell you wish)
 flameshot
 font-manager
 gcc
 geany
 git-core
+gnome-logs
+gnome-system-monitor
 gobject-introspection-devel #! needed for waypaper
   # https://software.opensuse.org/download/package?package=gsimplecal&project=home%3AAndnoVember%3ALXQt
   gsimplecal
@@ -48,7 +50,6 @@ telegram-desktop
 tint2
 thunar
 thunar-archive-plugin
-qt5ct
 qt6ct
 udiskie
 xdg-desktop-portal-gtk

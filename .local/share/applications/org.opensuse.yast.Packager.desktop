@@ -1,0 +1,46 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=YaST Software
+Name[ca]=Programari del YaST
+Name[cs]=YaST Software
+Name[fi]=YaST-ohjelmisto
+Name[id]=Perangkat Lunak YaST
+Name[ja]=YaST ソフトウエア
+Name[pt_BR]=YaST Software
+Name[sk]=YaST Softvér
+Name[sv]=YaST Programvara
+Name[zh_CN]=YaST 软件
+GenericName=Software Manager
+GenericName[ca]=Gestor de programari
+GenericName[cs]=Správce softwaru
+GenericName[fi]=Ohjelmistohallinta
+GenericName[id]=Pengelola Perangkat Lunak
+GenericName[ja]=ソフトウエアマネージャ
+GenericName[pt_BR]=Gerenciador de software
+GenericName[ru]=Менеджер ПО
+GenericName[sk]=Správca softvéru
+GenericName[zh_CN]=软件中心
+Comment=Install/Remove Software
+Comment[ca]=Instal·la / suprimeix programari
+Comment[cs]=Instalovat/odstranit software
+Comment[fi]=Asenna/poista ohjelmistoa
+Comment[id]=Pasang/Hapus Perangkat Lunak
+Comment[ja]=ソフトウエアのインストールと削除
+Comment[pt_BR]=Instalar/Remover software
+Comment[sk]=Inštalovať/odstrániť softvér
+Comment[sv]=Installera/Ta bort programvara
+Comment[zh_CN]=安装/移除软件
+# we cannot use xdg-su -c "/sbin/yast2 sw_single %F"
+# directly here as %F must not be used inside a quoted argument
+# see https://standards.freedesktop.org/desktop-entry-spec/desktop-entry-spec-latest.html#exec-variables
+Exec=/usr/lib/YaST2/bin/sw_single_wrapper %F
+Icon=yast-sw_single
+Terminal=false
+Type=Application
+Categories=System;PackageManager;X-SuSE-ControlCenter-System;
+X-SuSE-YaST-Keywords=software,packages,rpm,installation,deletion
+MimeType=application/x-rpm;application/x-redhat-package-manager;
+NotShowIn=GNOME;MATE;
+StartupNotify=true
+Hidden=true
+

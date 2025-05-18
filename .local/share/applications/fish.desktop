@@ -1,0 +1,20 @@
+[Desktop Entry]
+GenericName=Command-line interpreter
+GenericName[ca]=Accés a la línia d'ordres
+GenericName[ja]=コマンドラインインタプリタ
+GenericName[sk]=Interpreter príkazového riadku
+Version=1.0
+Type=Application
+Terminal=true
+# This file is for use in appimages, which rewrite the path.
+# Other uses would have to replace these with the correct path.
+Exec=fish
+Name=fish
+Name[ca]=Peix serra
+Name[ja]=fish
+Name[sk]=fish
+Comment=The user-friendly command line shell
+Icon=fish
+# "Shell" would be the proper category, but it's reserved so we can't use it.
+Categories=ConsoleOnly;System;TerminalEmulator;
+Hidden=true

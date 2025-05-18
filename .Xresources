@@ -1,4 +1,5 @@
-Xcursor.theme: phinger-cursors-light
+Xcursor.theme: Hackneyed-Dark
+Xcursor.size: 30
 
 ! Xterm settings
 XTerm*renderFont: true
