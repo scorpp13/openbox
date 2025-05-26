@@ -1,13 +1,13 @@
 /usr/libexec/polkit-gnome-authentication-agent-1 &
 picom --daemon &
 light-locker &
-dunst &
-$HOME/.fehbg &
+waypaper --restore
 tint2 &
 parcellite &
 pasystray &
 nm-applet &
 xfce4-power-manager &
 udiskie -Ans &
+dunst &
 gio launch $HOME/.config/autostart/org.telegram.desktop.desktop &
 gio launch $HOME/.config/autostart/com.github.eneshecan.WhatsAppForLinux.desktop &

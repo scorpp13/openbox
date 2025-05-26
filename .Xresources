@@ -3,7 +3,7 @@ Xcursor.size: 30
 
 ! Xterm settings
 XTerm*renderFont: true
-XTerm*faceName: Source Code Pro
+XTerm*faceName: Adwaita Mono
 XTerm*faceSize: 14
 XTerm.vt100.translations: #override \
     Ctrl <Key> minus: smaller-vt-font() \n\

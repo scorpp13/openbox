@@ -7,5 +7,5 @@
 
 # Avoid `less` from storing and regenerate history file.
 export LESSHISTFILE='/dev/null'
-export QT_QPA_PLATFORMTHEME='qt6ct'
+export QT_QPA_PLATFORMTHEME='qt5ct'
 export EDITOR='vim'

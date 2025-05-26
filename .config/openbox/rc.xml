@@ -16,10 +16,10 @@
     <underMouse>no</underMouse>
     <!-- When followMouse is enabled, the mouse must be inside the window for
          this many milliseconds (1000 = 1 sec) before moving focus to it. -->
-    <focusDelay>10</focusDelay>
+    <focusDelay>500</focusDelay>
     <!-- When followMouse is enabled, and a window is given focus by moving the mouse into it,
          also raise the window. -->
-    <raiseOnFocus>no</raiseOnFocus>
+    <raiseOnFocus>yes</raiseOnFocus>
   </focus>
   <placement>
     <!-- 'Smart' or 'UnderMouse'. -->
@@ -40,7 +40,7 @@
     <primaryMonitor>1</primaryMonitor>
   </placement>
   <theme>
-    <name>Avokado</name>
+    <name>Gruvbox</name>
     <!-- Available characters are NDSLIMC, each can occur at most once.
          N: window icon
          L: window label (AKA title)
@@ -53,7 +53,7 @@
     <keepBorder>yes</keepBorder>
     <animateIconify>yes</animateIconify>
     <font place="ActiveWindow">
-      <name>Noto Sans</name>
+      <name>Adwaita Sans</name>
       <!-- Font size in points. -->
       <size>13</size>
       <!-- 'bold' or 'normal'. -->
@@ -62,7 +62,7 @@
       <slant>Normal</slant>
     </font>
     <font place="InactiveWindow">
-      <name>Noto Sans</name>
+      <name>Adwaita Sans</name>
       <!-- Font size in points. -->
       <size>13</size>
       <!-- 'bold' or 'normal'. -->
@@ -71,7 +71,7 @@
       <slant>Normal</slant>
     </font>
     <font place="MenuHeader">
-      <name>Noto Sans Semi-Bold</name>
+      <name>Adwaita Sans Semi-Bold</name>
       <!-- Font size in points. -->
       <size>13</size>
       <!-- 'bold' or 'normal'. -->
@@ -80,7 +80,7 @@
       <slant>Normal</slant>
     </font>
     <font place="MenuItem">
-      <name>Noto Sans</name>
+      <name>Adwaita Sans</name>
       <!-- Font size in points. -->
       <size>13</size>
       <!-- 'bold' or 'normal'. -->
@@ -89,7 +89,7 @@
       <slant>Normal</slant>
     </font>
     <font place="ActiveOnScreenDisplay">
-      <name>Noto Sans</name>
+      <name>Adwaita Sans</name>
       <!-- Font size in points. -->
       <size>13</size>
       <!-- 'bold' or 'normal'. -->
@@ -98,7 +98,7 @@
       <slant>Normal</slant>
     </font>
     <font place="InactiveOnScreenDisplay">
-      <name>Noto Sans</name>
+      <name>Adwaita Sans</name>
       <!-- Font size in points. -->
       <size>13</size>
       <!-- 'bold' or 'normal'. -->
@@ -377,7 +377,7 @@
     <doubleClickTime>500</doubleClickTime>
     <!-- Time before changing desktops when the pointer touches the edge of the screen while moving a window,
          in milliseconds (1000 = 1 second). Set this to 0 to disable warping. -->
-    <screenEdgeWarpTime>400</screenEdgeWarpTime>
+    <screenEdgeWarpTime>500</screenEdgeWarpTime>
     <!-- Set this to TRUE to move the mouse pointer across the desktop when switching
          due to hitting the edge of the screen. -->
     <screenEdgeWarpMouse>false</screenEdgeWarpMouse>
