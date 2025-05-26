@@ -184,7 +184,7 @@ task_centered = 1
 urgent_nb_of_blink = 3
 task_maximum_size = 22 22
 task_padding = 2 2 2
-task_font = Noto Sans 0
+task_font = Adwaita Sans 0
 task_tooltip = 1
 task_thumbnail = 1
 task_thumbnail_size = 300
@@ -366,7 +366,7 @@ tooltip_hide_timeout = 0.2
 tooltip_padding = 10 10
 tooltip_background_id = 7
 tooltip_font_color = #f9f9f9 100
-tooltip_font = Noto Sans 13
+tooltip_font = Adwaita Sans 13
 
 #-------------------------------------
 # Executor 1
