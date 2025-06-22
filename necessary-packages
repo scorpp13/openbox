@@ -41,6 +41,7 @@ perl-Data-Dump          #! needed for obmenu-generator
 perl-Linux-DesktopFile  #! needed for obmenu-generator
 perl-File-DesktopEntry  #! needed for obmenu-generator
 picom
+polybar
 pytnon311-pipx
 python311-psutil
 python311-pycairo-devel #! needed for waypaper
@@ -61,6 +62,8 @@ vifm
 w3m
   # pipx install waypaper	
   waypaper              #! first install dependencies
+  # https://github.com/tuurep/windowlist    
+  windowlist            #! needed for polybar
 whatsapp-for-linux
 <---------------------------------------------------->
 .
