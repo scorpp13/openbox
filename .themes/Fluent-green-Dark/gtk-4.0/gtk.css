@@ -1837,7 +1837,7 @@ headerbar entry image:disabled {
 headerbar windowcontrols > button:not(.suggested-action):not(.destructive-action) {
   min-height: 26px;
   min-width: 26px;
-  padding: 3px 0;
+  padding: 0;
   margin-left: 3px;
   margin-right: 3px;
 }
@@ -2030,6 +2030,7 @@ headerbar .selection-mode {
 
 headerbar windowcontrols {
   border-spacing: 6px;
+  margin: 3px 0;
 }
 
 headerbar windowcontrols:not(.empty).start:dir(ltr), headerbar windowcontrols:not(.empty).end:dir(rtl) {
@@ -2051,22 +2052,22 @@ headerbar windowcontrols > button:not(.suggested-action):not(.destructive-action
   background-color: transparent;
 }
 
-headerbar windowcontrols > button:not(.suggested-action):not(.destructive-action).minimize:hover > image, headerbar windowcontrols > button:not(.suggested-action):not(.destructive-action).maximize:hover > image {
+headerbar windowcontrols > button:not(.suggested-action):not(.destructive-action).minimize:hover, headerbar windowcontrols > button:not(.suggested-action):not(.destructive-action).maximize:hover {
   background-color: alpha(currentColor, 0.08);
   color: white;
 }
 
-headerbar windowcontrols > button:not(.suggested-action):not(.destructive-action).minimize:active > image, headerbar windowcontrols > button:not(.suggested-action):not(.destructive-action).maximize:active > image {
+headerbar windowcontrols > button:not(.suggested-action):not(.destructive-action).minimize:active, headerbar windowcontrols > button:not(.suggested-action):not(.destructive-action).maximize:active {
   background-color: alpha(currentColor, 0.16);
   color: white;
 }
 
-headerbar windowcontrols > button:not(.suggested-action):not(.destructive-action).close:hover > image {
+headerbar windowcontrols > button:not(.suggested-action):not(.destructive-action).close:hover {
   background-color: #E57373;
   color: white;
 }
 
-headerbar windowcontrols > button:not(.suggested-action):not(.destructive-action).close:active > image {
+headerbar windowcontrols > button:not(.suggested-action):not(.destructive-action).close:active {
   background-color: #E53935;
   color: white;
 }
@@ -6664,6 +6665,7 @@ viewswitcher {
   border-radius: 2px;
   background-color: rgba(255, 255, 255, 0.04);
   padding: 0 3px;
+  min-height: 32px;
 }
 
 viewswitcher.wide button.toggle {
@@ -7916,3 +7918,82 @@ FIXME this is really an API */
 @define-color BLACK_500 #393634;
 @define-color BLACK_700 #33302F;
 @define-color BLACK_900 #2B2928;
+/* LIBADWAITA NAMED COLORS
+   -----------------------
+       use responsibly!    */
+/*
+important/interactive/active widget accent colors */
+@define-color accent_color #66BB6A;
+@define-color accent_bg_color #66BB6A;
+@define-color accent_fg_color white;
+/*
+dangerous action colors */
+@define-color destructive_color #F28B82;
+@define-color destructive_bg_color #F28B82;
+@define-color destructive_fg_color rgba(0, 0, 0, 0.87);
+/*
+success colors */
+@define-color success_bg_color #81C995;
+@define-color success_fg_color rgba(0, 0, 0, 0.87);
+/*
+warning colors */
+@define-color warning_bg_color #FDD633;
+@define-color warning_fg_color rgba(0, 0, 0, 0.87);
+/*
+error colors */
+@define-color error_bg_color #F28B82;
+@define-color error_fg_color rgba(0, 0, 0, 0.87);
+/*
+window colors */
+@define-color window_bg_color #333333;
+@define-color window_fg_color white;
+/*
+view colors */
+@define-color view_bg_color #2B2B2B;
+@define-color view_fg_color white;
+/*
+headerbar colors */
+@define-color headerbar_bg_color #202020;
+@define-color headerbar_fg_color white;
+@define-color headerbar_border_color rgba(255, 255, 255, 0.12);
+@define-color headerbar_backdrop_color #2C2C2C;
+@define-color headerbar_shade_color #111111;
+@define-color headerbar_darker_shade_color #010101;
+/*
+sidebar colors */
+@define-color sidebar_bg_color #2B2B2B;
+@define-color sidebar_fg_color white;
+@define-color sidebar_backdrop_color #303030;
+@define-color sidebar_border_color rgba(255, 255, 255, 0.12);
+@define-color sidebar_shade_color #1c1c1c;
+/*
+secondary sidebar colors */
+@define-color secondary_sidebar_bg_color #303030;
+@define-color secondary_sidebar_fg_color white;
+@define-color secondary_sidebar_backdrop_color #262626;
+@define-color secondary_sidebar_border_color rgba(255, 255, 255, 0.12);
+@define-color secondary_sidebar_shade_color #1c1c1c;
+/*
+card and boxes list colors */
+@define-color card_bg_color #2B2B2B;
+@define-color card_fg_color white;
+@define-color card_shade_color #1c1c1c;
+/*
+tab overview colors */
+@define-color thumbnail_bg_color #303030;
+@define-color thumbnail_fg_color white;
+/*
+dialog colors */
+@define-color dialog_bg_color #2B2B2B;
+@define-color dialog_fg_color white;
+/*
+three dots menu colors */
+@define-color popover_bg_color #2B2B2B;
+@define-color popover_fg_color white;
+@define-color popover_shade_color #1c1c1c;
+/*
+scroll undershoot and transition color */
+@define-color shade_color rgba(0, 0, 0, 0.06);
+/*
+scroll bar outine color */
+@define-color scrollbar_outline_color rgba(255, 255, 255, 0.1);
