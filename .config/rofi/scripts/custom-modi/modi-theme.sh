@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/bash
 
 export LANG='POSIX'
 exec 2>/dev/null
@@ -32,7 +32,7 @@ case "${@}" in
     ;;
     "$F") eval 'exec lxappearance >&2'
     ;;
-    "$G") eval 'exec qt6ct >&2'
+    "$G") eval 'exec qt5ct >&2'
     ;;
 esac
 

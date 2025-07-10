@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/bash
 set -u
 
 declare -r VERSION="4.3.2"

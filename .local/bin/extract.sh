@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/bash
 
 DIR=$(gum file --directory "$HOME")
 INPUT=$(find "$DIR" | gum choose --limit 1)

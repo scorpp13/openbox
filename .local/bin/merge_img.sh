@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/bash
 
 # This script merges some images to one file. It prompts the user to select an
 # image file(s); set the number of columns and lines for an output file.

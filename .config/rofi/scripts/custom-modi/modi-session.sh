@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/bash
 
 export LANG='POSIX'
 exec 2>/dev/null
@@ -15,8 +15,7 @@ A_='' A="<span font_desc='${ROW_ICON_FONT}' weight='bold'>${A_}</span>   Powe
 B_='' B="<span font_desc='${ROW_ICON_FONT}' weight='bold'>${B_}</span>   Reboot"
 C_='' C="<span font_desc='${ROW_ICON_FONT}' weight='bold'>${C_}</span>   Lock"
 D_='' D="<span font_desc='${ROW_ICON_FONT}' weight='bold'>${D_}</span>   Suspend"
-E_='' E="<span font_desc='${ROW_ICON_FONT}' weight='bold'>${E_}</span>   Hibernate"
-F_='' F="<span font_desc='${ROW_ICON_FONT}' weight='bold'>${F_}</span>   Logout"
+E_='' E="<span font_desc='${ROW_ICON_FONT}' weight='bold'>${E_}</span>   Logout"
 Y_='' Y="<span font_desc='${ROW_ICON_FONT}' weight='bold'>${Y_}</span>   Confirm"
 N_='' N="<span font_desc='${ROW_ICON_FONT}' weight='bold'>${N_}</span>   Cancel"
 Z_='' Z="<span font_desc='${ROW_ICON_FONT}' weight='bold'>${Z_}</span>   Firmware Setup"
@@ -44,9 +43,7 @@ case "${@}" in
     ;;
     "$D"     ) prompt "$D_" "${SYSTEMCTL:-loginctl} --no-ask-password suspend"
     ;;
-    "$E"     ) prompt "$E_" "${SYSTEMCTL:-loginctl} --no-ask-password suspend"
-    ;;
-    "$F"     ) prompt "$F_" "loginctl --no-ask-password kill-user ${EUID:-$(id -u)} --signal=SIGKILL"
+    "$E"     ) prompt "$E_" "loginctl --no-ask-password kill-user ${EUID:-$(id -u)} --signal=SIGKILL"
     ;;
     "$Z"     ) eval "exec systemctl reboot --firmware-setup >&2"
     ;;
@@ -57,6 +54,6 @@ esac
 MESSAGE=" $(date +%d.%m) "
 
 printf '%b\n' '\0use-hot-keys\037true' '\0markup-rows\037true' "\0message\037${MESSAGE}" \
-              "$A" "$B" "$C" "$D" "$E" "$F"
+              "$A" "$B" "$C" "$D" "$E"
 
 exit ${?}

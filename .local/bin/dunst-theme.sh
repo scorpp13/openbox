@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/bash
 
 gum style \
 	--foreground 13 --border-foreground 13 --border rounded --bold \

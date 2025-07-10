@@ -48,8 +48,8 @@ overflow_fg_color = "none"
 overflow_bg_color = "none"
 overflow_ul_color = "none"
 
-active_window_font   = 0
-inactive_window_font = 0
+active_window_font   = 2
+inactive_window_font = 2
 separator_font       = 0
 empty_desktop_font   = 0
 overflow_font        = 0
@@ -62,4 +62,10 @@ ignored_classes = [
 [window_nicknames]
 # "foo" = "bar"
 # "baz" = "qux"
-"org.gnome.evolution" = "evolution"
+"org.gnome.evolution" = ""
+"firefox" = ""
+"telegramdesktop" = ""
+"thunar" = ""
+"kitty" = ""
+"gnome-system-monitor" = ""
+"geany" = "塀"
