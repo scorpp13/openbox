@@ -30,3 +30,7 @@ Lightweight openSUSE_Tumbleweed with openbox onboard
     - `sudo reboot`
 - [ ] Enjoy
 - `^;^`
+
+## Note
+
+This config will no longer have update!!!
